@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		703A86251CCEEBA500E6AFA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86241CCEEBA500E6AFA3 /* main.m */; };
 		703A86281CCEEBA500E6AFA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86271CCEEBA500E6AFA3 /* AppDelegate.m */; };
-		703A862B1CCEEBA500E6AFA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A862A1CCEEBA500E6AFA3 /* ViewController.m */; };
 		703A862E1CCEEBA500E6AFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A862C1CCEEBA500E6AFA3 /* Main.storyboard */; };
 		703A86301CCEEBA500E6AFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703A862F1CCEEBA500E6AFA3 /* Assets.xcassets */; };
 		703A86331CCEEBA500E6AFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A86311CCEEBA500E6AFA3 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,7 @@
 		703A86731CCEFA8100E6AFA3 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		703A86741CCEFA8100E6AFA3 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86571CCEEFAC00E6AFA3 /* Mantle.framework */; };
 		703A86751CCEFA8100E6AFA3 /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86571CCEEFAC00E6AFA3 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		703A86791CCEFE3700E6AFA3 /* GHRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +63,6 @@
 		703A86241CCEEBA500E6AFA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		703A86261CCEEBA500E6AFA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		703A86271CCEEBA500E6AFA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		703A86291CCEEBA500E6AFA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		703A862A1CCEEBA500E6AFA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		703A862D1CCEEBA500E6AFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		703A862F1CCEEBA500E6AFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		703A86321CCEEBA500E6AFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +80,8 @@
 		703A86691CCEF71500E6AFA3 /* GHDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDataSource.h; sourceTree = "<group>"; };
 		703A866A1CCEF71500E6AFA3 /* GHDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDataSource.m; sourceTree = "<group>"; };
 		703A866D1CCEF77300E6AFA3 /* GHDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDataSourceTest.m; sourceTree = "<group>"; };
+		703A86771CCEFE3700E6AFA3 /* GHRepositoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryController.h; sourceTree = "<group>"; };
+		703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +186,6 @@
 				703A86601CCEF08200E6AFA3 /* Others */,
 				703A865F1CCEF07C00E6AFA3 /* ViewModel */,
 				703A865E1CCEF07600E6AFA3 /* Model */,
-				703A865D1CCEF07200E6AFA3 /* View */,
 				703A865C1CCEF06D00E6AFA3 /* Controller */,
 			);
 			name = Code;
@@ -195,17 +194,10 @@
 		703A865C1CCEF06D00E6AFA3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				703A86291CCEEBA500E6AFA3 /* ViewController.h */,
-				703A862A1CCEEBA500E6AFA3 /* ViewController.m */,
+				703A86771CCEFE3700E6AFA3 /* GHRepositoryController.h */,
+				703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		703A865D1CCEF07200E6AFA3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		703A865E1CCEF07600E6AFA3 /* Model */ = {
@@ -239,6 +231,7 @@
 		703A86611CCEF08D00E6AFA3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				703A867A1CCEFE6100E6AFA3 /* Cell */,
 				703A862C1CCEEBA500E6AFA3 /* Main.storyboard */,
 				703A862F1CCEEBA500E6AFA3 /* Assets.xcassets */,
 				703A86311CCEEBA500E6AFA3 /* LaunchScreen.storyboard */,
@@ -261,6 +254,13 @@
 				703A866D1CCEF77300E6AFA3 /* GHDataSourceTest.m */,
 			);
 			name = DataSource;
+			sourceTree = "<group>";
+		};
+		703A867A1CCEFE6100E6AFA3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,8 +395,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703A86791CCEFE3700E6AFA3 /* GHRepositoryController.m in Sources */,
 				703A86641CCEF38A00E6AFA3 /* GHRepository.m in Sources */,
-				703A862B1CCEEBA500E6AFA3 /* ViewController.m in Sources */,
 				703A86281CCEEBA500E6AFA3 /* AppDelegate.m in Sources */,
 				703A866B1CCEF71500E6AFA3 /* GHDataSource.m in Sources */,
 				703A86251CCEEBA500E6AFA3 /* main.m in Sources */,

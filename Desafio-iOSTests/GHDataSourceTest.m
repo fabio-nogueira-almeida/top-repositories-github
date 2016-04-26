@@ -43,7 +43,7 @@
 - (void)testRepositoryFetch {
     XCTestExpectation *expectation = [self expectationWithDescription:@"fetching repositories"];
     
-    [self.manager GET:@"search/repositories?q=language:Java"
+    [self.manager GET:@"https://api.github.com/search/repositories?q=language:Java&sort=stars&page=1"
            parameters:nil
              progress:nil
     success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

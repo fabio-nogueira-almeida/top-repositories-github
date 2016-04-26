@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GHRepositoryController.h
 //  Desafio-iOS
 //
 //  Created by Fabio Nogueira on 25/04/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GHRepositoryController : UITableViewController
 
 @end
-
