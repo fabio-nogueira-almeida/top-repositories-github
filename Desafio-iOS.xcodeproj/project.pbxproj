@@ -13,12 +13,17 @@
 		703A862E1CCEEBA500E6AFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A862C1CCEEBA500E6AFA3 /* Main.storyboard */; };
 		703A86301CCEEBA500E6AFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703A862F1CCEEBA500E6AFA3 /* Assets.xcassets */; };
 		703A86331CCEEBA500E6AFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A86311CCEEBA500E6AFA3 /* LaunchScreen.storyboard */; };
-		703A863E1CCEEBA500E6AFA3 /* Desafio_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A863D1CCEEBA500E6AFA3 /* Desafio_iOSTests.m */; };
-		703A86491CCEEBA500E6AFA3 /* Desafio_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86481CCEEBA500E6AFA3 /* Desafio_iOSUITests.m */; };
 		703A86581CCEEFAC00E6AFA3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; };
 		703A86591CCEEFAC00E6AFA3 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86571CCEEFAC00E6AFA3 /* Mantle.framework */; };
 		703A86641CCEF38A00E6AFA3 /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86631CCEF38A00E6AFA3 /* GHRepository.m */; };
 		703A86671CCEF53000E6AFA3 /* GHOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86661CCEF53000E6AFA3 /* GHOwner.m */; };
+		703A866B1CCEF71500E6AFA3 /* GHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A866A1CCEF71500E6AFA3 /* GHDataSource.m */; };
+		703A866E1CCEF77300E6AFA3 /* GHDataSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A866D1CCEF77300E6AFA3 /* GHDataSourceTest.m */; };
+		703A866F1CCEF7BF00E6AFA3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; };
+		703A86721CCEFA8100E6AFA3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; };
+		703A86731CCEFA8100E6AFA3 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		703A86741CCEFA8100E6AFA3 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86571CCEEFAC00E6AFA3 /* Mantle.framework */; };
+		703A86751CCEFA8100E6AFA3 /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86571CCEEFAC00E6AFA3 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		703A86761CCEFA8200E6AFA3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				703A86731CCEFA8100E6AFA3 /* AFNetworking.framework in Embed Frameworks */,
+				703A86751CCEFA8100E6AFA3 /* Mantle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		703A86201CCEEBA500E6AFA3 /* Desafio-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		703A86241CCEEBA500E6AFA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,10 +70,8 @@
 		703A86321CCEEBA500E6AFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		703A86341CCEEBA500E6AFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703A86391CCEEBA500E6AFA3 /* Desafio-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		703A863D1CCEEBA500E6AFA3 /* Desafio_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Desafio_iOSTests.m; sourceTree = "<group>"; };
 		703A863F1CCEEBA500E6AFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703A86441CCEEBA500E6AFA3 /* Desafio-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		703A86481CCEEBA500E6AFA3 /* Desafio_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Desafio_iOSUITests.m; sourceTree = "<group>"; };
 		703A864A1CCEEBA500E6AFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		703A86571CCEEFAC00E6AFA3 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
@@ -61,6 +79,9 @@
 		703A86631CCEF38A00E6AFA3 /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepository.m; sourceTree = "<group>"; };
 		703A86651CCEF53000E6AFA3 /* GHOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHOwner.h; sourceTree = "<group>"; };
 		703A86661CCEF53000E6AFA3 /* GHOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHOwner.m; sourceTree = "<group>"; };
+		703A86691CCEF71500E6AFA3 /* GHDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDataSource.h; sourceTree = "<group>"; };
+		703A866A1CCEF71500E6AFA3 /* GHDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDataSource.m; sourceTree = "<group>"; };
+		703A866D1CCEF77300E6AFA3 /* GHDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDataSourceTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +90,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				703A86581CCEEFAC00E6AFA3 /* AFNetworking.framework in Frameworks */,
+				703A86741CCEFA8100E6AFA3 /* Mantle.framework in Frameworks */,
+				703A86721CCEFA8100E6AFA3 /* AFNetworking.framework in Frameworks */,
 				703A86591CCEEFAC00E6AFA3 /* Mantle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703A866F1CCEF7BF00E6AFA3 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +156,7 @@
 		703A863C1CCEEBA500E6AFA3 /* Desafio-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				703A863D1CCEEBA500E6AFA3 /* Desafio_iOSTests.m */,
+				703A866C1CCEF76500E6AFA3 /* DataSource */,
 				703A863F1CCEEBA500E6AFA3 /* Info.plist */,
 			);
 			path = "Desafio-iOSTests";
@@ -141,7 +165,6 @@
 		703A86471CCEEBA500E6AFA3 /* Desafio-iOSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				703A86481CCEEBA500E6AFA3 /* Desafio_iOSUITests.m */,
 				703A864A1CCEEBA500E6AFA3 /* Info.plist */,
 			);
 			path = "Desafio-iOSUITests";
@@ -226,6 +249,16 @@
 		703A86681CCEF6DF00E6AFA3 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				703A86691CCEF71500E6AFA3 /* GHDataSource.h */,
+				703A866A1CCEF71500E6AFA3 /* GHDataSource.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		703A866C1CCEF76500E6AFA3 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				703A866D1CCEF77300E6AFA3 /* GHDataSourceTest.m */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -240,6 +273,7 @@
 				703A861C1CCEEBA500E6AFA3 /* Sources */,
 				703A861D1CCEEBA500E6AFA3 /* Frameworks */,
 				703A861E1CCEEBA500E6AFA3 /* Resources */,
+				703A86761CCEFA8200E6AFA3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +398,7 @@
 				703A86641CCEF38A00E6AFA3 /* GHRepository.m in Sources */,
 				703A862B1CCEEBA500E6AFA3 /* ViewController.m in Sources */,
 				703A86281CCEEBA500E6AFA3 /* AppDelegate.m in Sources */,
+				703A866B1CCEF71500E6AFA3 /* GHDataSource.m in Sources */,
 				703A86251CCEEBA500E6AFA3 /* main.m in Sources */,
 				703A86671CCEF53000E6AFA3 /* GHOwner.m in Sources */,
 			);
@@ -373,7 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				703A863E1CCEEBA500E6AFA3 /* Desafio_iOSTests.m in Sources */,
+				703A866E1CCEF77300E6AFA3 /* GHDataSourceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				703A86491CCEEBA500E6AFA3 /* Desafio_iOSUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +572,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Desafio-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Desafio-iOSTests";
@@ -550,6 +588,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Desafio-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Desafio-iOSTests";
