@@ -26,6 +26,7 @@
 		703A86791CCEFE3700E6AFA3 /* GHRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */; };
 		703A867D1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A867C1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m */; };
 		703A867F1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */; };
+		703A86821CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86811CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		703A867B1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryTableViewCell.h; sourceTree = "<group>"; };
 		703A867C1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTableViewCell.m; sourceTree = "<group>"; };
 		703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		703A86811CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryControllerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		703A863C1CCEEBA500E6AFA3 /* Desafio-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				703A86801CCF7FB500E6AFA3 /* Controller */,
 				703A866C1CCEF76500E6AFA3 /* DataSource */,
 				703A863F1CCEEBA500E6AFA3 /* Info.plist */,
 			);
@@ -269,6 +272,14 @@
 				703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		703A86801CCF7FB500E6AFA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				703A86811CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703A86821CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m in Sources */,
 				703A866E1CCEF77300E6AFA3 /* GHDataSourceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
