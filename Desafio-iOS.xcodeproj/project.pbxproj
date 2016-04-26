@@ -17,6 +17,8 @@
 		703A86491CCEEBA500E6AFA3 /* Desafio_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86481CCEEBA500E6AFA3 /* Desafio_iOSUITests.m */; };
 		703A86581CCEEFAC00E6AFA3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; };
 		703A86591CCEEFAC00E6AFA3 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86571CCEEFAC00E6AFA3 /* Mantle.framework */; };
+		703A86641CCEF38A00E6AFA3 /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86631CCEF38A00E6AFA3 /* GHRepository.m */; };
+		703A86671CCEF53000E6AFA3 /* GHOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86661CCEF53000E6AFA3 /* GHOwner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		703A864A1CCEEBA500E6AFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		703A86571CCEEFAC00E6AFA3 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
+		703A86621CCEF38A00E6AFA3 /* GHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepository.h; sourceTree = "<group>"; };
+		703A86631CCEF38A00E6AFA3 /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepository.m; sourceTree = "<group>"; };
+		703A86651CCEF53000E6AFA3 /* GHOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHOwner.h; sourceTree = "<group>"; };
+		703A86661CCEF53000E6AFA3 /* GHOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHOwner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +93,7 @@
 		703A86171CCEEBA500E6AFA3 = {
 			isa = PBXGroup;
 			children = (
-				703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */,
-				703A86571CCEEFAC00E6AFA3 /* Mantle.framework */,
+				703A865A1CCEF05500E6AFA3 /* Frameworks */,
 				703A86221CCEEBA500E6AFA3 /* Desafio-iOS */,
 				703A863C1CCEEBA500E6AFA3 /* Desafio-iOSTests */,
 				703A86471CCEEBA500E6AFA3 /* Desafio-iOSUITests */,
@@ -109,15 +114,9 @@
 		703A86221CCEEBA500E6AFA3 /* Desafio-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				703A86261CCEEBA500E6AFA3 /* AppDelegate.h */,
-				703A86271CCEEBA500E6AFA3 /* AppDelegate.m */,
-				703A86291CCEEBA500E6AFA3 /* ViewController.h */,
-				703A862A1CCEEBA500E6AFA3 /* ViewController.m */,
-				703A862C1CCEEBA500E6AFA3 /* Main.storyboard */,
-				703A862F1CCEEBA500E6AFA3 /* Assets.xcassets */,
-				703A86311CCEEBA500E6AFA3 /* LaunchScreen.storyboard */,
-				703A86341CCEEBA500E6AFA3 /* Info.plist */,
+				703A865B1CCEF06600E6AFA3 /* Code */,
 				703A86231CCEEBA500E6AFA3 /* Supporting Files */,
+				703A86611CCEF08D00E6AFA3 /* View */,
 			);
 			path = "Desafio-iOS";
 			sourceTree = "<group>";
@@ -146,6 +145,89 @@
 				703A864A1CCEEBA500E6AFA3 /* Info.plist */,
 			);
 			path = "Desafio-iOSUITests";
+			sourceTree = "<group>";
+		};
+		703A865A1CCEF05500E6AFA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */,
+				703A86571CCEEFAC00E6AFA3 /* Mantle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		703A865B1CCEF06600E6AFA3 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				703A86681CCEF6DF00E6AFA3 /* DataSource */,
+				703A86601CCEF08200E6AFA3 /* Others */,
+				703A865F1CCEF07C00E6AFA3 /* ViewModel */,
+				703A865E1CCEF07600E6AFA3 /* Model */,
+				703A865D1CCEF07200E6AFA3 /* View */,
+				703A865C1CCEF06D00E6AFA3 /* Controller */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		703A865C1CCEF06D00E6AFA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				703A86291CCEEBA500E6AFA3 /* ViewController.h */,
+				703A862A1CCEEBA500E6AFA3 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		703A865D1CCEF07200E6AFA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		703A865E1CCEF07600E6AFA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				703A86621CCEF38A00E6AFA3 /* GHRepository.h */,
+				703A86631CCEF38A00E6AFA3 /* GHRepository.m */,
+				703A86651CCEF53000E6AFA3 /* GHOwner.h */,
+				703A86661CCEF53000E6AFA3 /* GHOwner.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		703A865F1CCEF07C00E6AFA3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		703A86601CCEF08200E6AFA3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				703A86341CCEEBA500E6AFA3 /* Info.plist */,
+				703A86261CCEEBA500E6AFA3 /* AppDelegate.h */,
+				703A86271CCEEBA500E6AFA3 /* AppDelegate.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		703A86611CCEF08D00E6AFA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				703A862C1CCEEBA500E6AFA3 /* Main.storyboard */,
+				703A862F1CCEEBA500E6AFA3 /* Assets.xcassets */,
+				703A86311CCEEBA500E6AFA3 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		703A86681CCEF6DF00E6AFA3 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703A86641CCEF38A00E6AFA3 /* GHRepository.m in Sources */,
 				703A862B1CCEEBA500E6AFA3 /* ViewController.m in Sources */,
 				703A86281CCEEBA500E6AFA3 /* AppDelegate.m in Sources */,
 				703A86251CCEEBA500E6AFA3 /* main.m in Sources */,
+				703A86671CCEF53000E6AFA3 /* GHOwner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
