@@ -24,6 +24,8 @@
 		703A86741CCEFA8100E6AFA3 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86571CCEEFAC00E6AFA3 /* Mantle.framework */; };
 		703A86751CCEFA8100E6AFA3 /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86571CCEEFAC00E6AFA3 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		703A86791CCEFE3700E6AFA3 /* GHRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */; };
+		703A867D1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A867C1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m */; };
+		703A867F1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,9 @@
 		703A866D1CCEF77300E6AFA3 /* GHDataSourceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDataSourceTest.m; sourceTree = "<group>"; };
 		703A86771CCEFE3700E6AFA3 /* GHRepositoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryController.h; sourceTree = "<group>"; };
 		703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryController.m; sourceTree = "<group>"; };
+		703A867B1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryTableViewCell.h; sourceTree = "<group>"; };
+		703A867C1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTableViewCell.m; sourceTree = "<group>"; };
+		703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +264,9 @@
 		703A867A1CCEFE6100E6AFA3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				703A867B1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.h */,
+				703A867C1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m */,
+				703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -368,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703A867F1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib in Resources */,
 				703A86331CCEEBA500E6AFA3 /* LaunchScreen.storyboard in Resources */,
 				703A86301CCEEBA500E6AFA3 /* Assets.xcassets in Resources */,
 				703A862E1CCEEBA500E6AFA3 /* Main.storyboard in Resources */,
@@ -395,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703A867D1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m in Sources */,
 				703A86791CCEFE3700E6AFA3 /* GHRepositoryController.m in Sources */,
 				703A86641CCEF38A00E6AFA3 /* GHRepository.m in Sources */,
 				703A86281CCEEBA500E6AFA3 /* AppDelegate.m in Sources */,
