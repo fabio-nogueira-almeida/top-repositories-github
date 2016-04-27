@@ -8,6 +8,7 @@
 
 #import "GHDataSource.h"
 #import "GHRepositoryResponse.h"
+#import "GHPullRequest.h"
 
 #import <AFNetworking/AFNetworking.h>
 
@@ -40,8 +41,8 @@
            parameters:nil
              progress:nil
     success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        
         GHRepositoryResponse *repositories =
         [[GHRepositoryResponse alloc] initWithDictionary:responseObject];
         NSString *totalCount = [responseObject objectForKey:@"total_count"];
@@ -56,5 +57,26 @@
     }];
 }
 
+- (void)fetchPullRequestSuccess:(GHPullRequestRequestSuccess)successBlock {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
+    [self.manager GET:@"https://api.github.com/repos/facebook/react-native/pulls"
+           parameters:nil
+             progress:nil
+    success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        
+//        GHRepositoryResponse *repositories =
+//        [[GHRepositoryResponse alloc] initWithDictionary:responseObject];
+
+        if (successBlock) {
+            return successBlock(nil);
+        }
+      
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        NSLog(@"error: %@", error.description);
+    }];
+}
 
 @end

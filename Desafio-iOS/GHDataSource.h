@@ -12,10 +12,13 @@
 @class GHHTTPHeader;
 
 typedef void(^GHPagedRequestSuccess) (__strong NSArray *repositories, NSInteger totalRepository);
+typedef void(^GHPullRequestRequestSuccess) (__strong NSArray *repositories);
 
 @interface GHDataSource : NSObject
 
 - (void)fetchRepositoryForPage:(NSInteger)page
                        success:(GHPagedRequestSuccess)successBlock;
+
+- (void)fetchPullRequestSuccess:(GHPullRequestRequestSuccess)successBlock;
 
 @end

@@ -37,6 +37,8 @@
 		707DCEFD1CD15CAD0099F41E /* GHRepositoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DCEFC1CD15CAD0099F41E /* GHRepositoryViewModel.m */; };
 		707DCEFF1CD15E220099F41E /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 707DCEFE1CD15E220099F41E /* Cartfile */; };
 		707DCF131CD165900099F41E /* GHRepositoryViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DCF121CD165900099F41E /* GHRepositoryViewModelTest.m */; };
+		7088CB3E1CD17F2000EE128A /* GHPullRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB3D1CD17F2000EE128A /* GHPullRequest.m */; };
+		7088CB411CD1800100EE128A /* GHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB401CD1800100EE128A /* GHUser.m */; };
 		70E418431CD047A500638600 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418421CD047A500638600 /* UITableView+Extension.m */; };
 		70E4184A1CD04E6400638600 /* GHLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418481CD04E6400638600 /* GHLoadingTableViewCell.m */; };
 		70E4184B1CD04E6400638600 /* GHLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E418491CD04E6400638600 /* GHLoadingTableViewCell.xib */; };
@@ -115,6 +117,10 @@
 		707DCEFC1CD15CAD0099F41E /* GHRepositoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryViewModel.m; sourceTree = "<group>"; };
 		707DCEFE1CD15E220099F41E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		707DCF121CD165900099F41E /* GHRepositoryViewModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryViewModelTest.m; sourceTree = "<group>"; };
+		7088CB3C1CD17F2000EE128A /* GHPullRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHPullRequest.h; sourceTree = "<group>"; };
+		7088CB3D1CD17F2000EE128A /* GHPullRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPullRequest.m; sourceTree = "<group>"; };
+		7088CB3F1CD1800100EE128A /* GHUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHUser.h; sourceTree = "<group>"; };
+		7088CB401CD1800100EE128A /* GHUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUser.m; sourceTree = "<group>"; };
 		70E418411CD047A500638600 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		70E418421CD047A500638600 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		70E418471CD04E6400638600 /* GHLoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHLoadingTableViewCell.h; sourceTree = "<group>"; };
@@ -262,6 +268,10 @@
 				703A86631CCEF38A00E6AFA3 /* GHRepository.m */,
 				703A86651CCEF53000E6AFA3 /* GHOwner.h */,
 				703A86661CCEF53000E6AFA3 /* GHOwner.m */,
+				7088CB3C1CD17F2000EE128A /* GHPullRequest.h */,
+				7088CB3D1CD17F2000EE128A /* GHPullRequest.m */,
+				7088CB3F1CD1800100EE128A /* GHUser.h */,
+				7088CB401CD1800100EE128A /* GHUser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -495,6 +505,7 @@
 				703A86791CCEFE3700E6AFA3 /* GHRepositoryController.m in Sources */,
 				703A86641CCEF38A00E6AFA3 /* GHRepository.m in Sources */,
 				70E4184A1CD04E6400638600 /* GHLoadingTableViewCell.m in Sources */,
+				7088CB411CD1800100EE128A /* GHUser.m in Sources */,
 				707DCEFD1CD15CAD0099F41E /* GHRepositoryViewModel.m in Sources */,
 				703A86921CD017C400E6AFA3 /* GHRepositoryResponse.m in Sources */,
 				703A86281CCEEBA500E6AFA3 /* AppDelegate.m in Sources */,
@@ -502,6 +513,7 @@
 				70E4184E1CD04F7300638600 /* GHRepositoryTableViewDataSource.m in Sources */,
 				703A866B1CCEF71500E6AFA3 /* GHDataSource.m in Sources */,
 				70E418431CD047A500638600 /* UITableView+Extension.m in Sources */,
+				7088CB3E1CD17F2000EE128A /* GHPullRequest.m in Sources */,
 				703A86251CCEEBA500E6AFA3 /* main.m in Sources */,
 				703A86671CCEF53000E6AFA3 /* GHOwner.m in Sources */,
 			);
