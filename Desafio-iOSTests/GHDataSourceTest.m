@@ -59,4 +59,21 @@
     [self waitForExpectationsWithTimeout:5 handler:nil];
 }
 
+- (void)testPullRequyestFetch {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"fetching repositories"];
+    
+    [self.manager GET:@"https://api.github.com/repos/facebook/react-native/pulls"
+           parameters:nil
+             progress:nil
+              success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                  NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)task.response;
+                  XCTAssertEqual(httpResponse.statusCode, 200);
+                  [expectation fulfill];
+              } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                  XCTFail(@"failure testPullRequyestFetch");
+              }];
+    
+    [self waitForExpectationsWithTimeout:5 handler:nil];
+}
+
 @end
