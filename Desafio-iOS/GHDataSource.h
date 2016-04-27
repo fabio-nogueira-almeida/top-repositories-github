@@ -15,7 +15,7 @@ typedef void(^GHPagedRequestSuccess) (__strong NSArray *repositories, __strong G
 
 @interface GHDataSource : NSObject
 
-- (void)fetchRepository:(NSInteger)page
-                success:(GHPagedRequestSuccess)successBlock;
+- (void)fetchRepositoryForPage:(NSInteger)page
+                       success:(GHPagedRequestSuccess)successBlock;
 
 @end

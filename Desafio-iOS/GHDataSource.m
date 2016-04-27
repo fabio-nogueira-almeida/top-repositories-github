@@ -33,19 +33,25 @@
 
 #pragma mark - Public
 
-- (void)fetchRepository:(NSInteger)page
-                success:(GHPagedRequestSuccess)successBlock {
+- (void)fetchRepositoryForPage:(NSInteger)page
+                       success:(GHPagedRequestSuccess)successBlock {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
     [self.manager GET:@"https://api.github.com/search/repositories?q=language:Java&sort=stars&page=1"
            parameters:nil
              progress:nil
     success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         GHRepositoryResponse *repositories =
         [[GHRepositoryResponse alloc] initWithDictionary:responseObject];
         
         if (successBlock) {
             return successBlock(repositories.items, NULL);
         }
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         NSLog(@"error: %@", error.description);
     }];
 }
