@@ -53,6 +53,7 @@
 - (void)setupTableView {
     self.tableView.estimatedRowHeight = 90.f;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.tableFooterView = [UIView new];
     self.tableView.dataSource = self.tableViewDataSource;
     self.tableView.delegate = self;
 }

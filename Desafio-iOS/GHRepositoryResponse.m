@@ -33,7 +33,7 @@
     self = [super init];
     if (self) {
         self.totalCount = [dictionary objectForKey:@"total_count"];
-        self.incompleteStatus = [dictionary objectForKey:@"incomplete_status"];
+        self.incompleteStatus = (BOOL)[dictionary objectForKey:@"incomplete_status"];
         [self repositoriesFromDictionary:dictionary];
     }
     return self;

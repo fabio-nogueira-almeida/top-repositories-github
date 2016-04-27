@@ -18,18 +18,23 @@
 		703A866B1CCEF71500E6AFA3 /* GHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A866A1CCEF71500E6AFA3 /* GHDataSource.m */; };
 		703A866E1CCEF77300E6AFA3 /* GHDataSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A866D1CCEF77300E6AFA3 /* GHDataSourceTest.m */; };
 		703A866F1CCEF7BF00E6AFA3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; };
-		703A86721CCEFA8100E6AFA3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; };
 		703A86731CCEFA8100E6AFA3 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		703A86791CCEFE3700E6AFA3 /* GHRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */; };
 		703A867D1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A867C1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m */; };
 		703A867F1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */; };
 		703A86821CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86811CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m */; };
 		703A86921CD017C400E6AFA3 /* GHRepositoryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86911CD017C400E6AFA3 /* GHRepositoryResponse.m */; };
+		707DCEFA1CD061A10099F41E /* GHRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */; };
 		70E418431CD047A500638600 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418421CD047A500638600 /* UITableView+Extension.m */; };
 		70E4184A1CD04E6400638600 /* GHLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418481CD04E6400638600 /* GHLoadingTableViewCell.m */; };
 		70E4184B1CD04E6400638600 /* GHLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E418491CD04E6400638600 /* GHLoadingTableViewCell.xib */; };
 		70E4184E1CD04F7300638600 /* GHRepositoryTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4184D1CD04F7300638600 /* GHRepositoryTableViewDataSource.m */; };
 		70E418511CD0502700638600 /* GHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418501CD0502700638600 /* GHTableViewCell.m */; };
+		70E418531CD0559900638600 /* GHRepositoryTableViewDataSorceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418521CD0559900638600 /* GHRepositoryTableViewDataSorceTests.m */; };
+		70E418551CD0594700638600 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E418541CD0594700638600 /* OCMock.framework */; };
+		70E418571CD05A1400638600 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E418541CD0594700638600 /* OCMock.framework */; };
+		70E418581CD05A4600638600 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E418541CD0594700638600 /* OCMock.framework */; };
+		70E418591CD05A4600638600 /* OCMock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70E418541CD0594700638600 /* OCMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				70E418591CD05A4600638600 /* OCMock.framework in Embed Frameworks */,
 				703A86731CCEFA8100E6AFA3 /* AFNetworking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -101,6 +107,8 @@
 		70E4184D1CD04F7300638600 /* GHRepositoryTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTableViewDataSource.m; sourceTree = "<group>"; };
 		70E4184F1CD0502700638600 /* GHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTableViewCell.h; sourceTree = "<group>"; };
 		70E418501CD0502700638600 /* GHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHTableViewCell.m; sourceTree = "<group>"; };
+		70E418521CD0559900638600 /* GHRepositoryTableViewDataSorceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTableViewDataSorceTests.m; sourceTree = "<group>"; };
+		70E418541CD0594700638600 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +116,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E418551CD0594700638600 /* OCMock.framework in Frameworks */,
+				70E418581CD05A4600638600 /* OCMock.framework in Frameworks */,
 				703A86581CCEEFAC00E6AFA3 /* AFNetworking.framework in Frameworks */,
-				703A86721CCEFA8100E6AFA3 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E418571CD05A1400638600 /* OCMock.framework in Frameworks */,
 				703A866F1CCEF7BF00E6AFA3 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +201,7 @@
 		703A865A1CCEF05500E6AFA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70E418541CD0594700638600 /* OCMock.framework */,
 				703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */,
 			);
 			name = Frameworks;
@@ -274,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				703A866D1CCEF77300E6AFA3 /* GHDataSourceTest.m */,
+				70E418521CD0559900638600 /* GHRepositoryTableViewDataSorceTests.m */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -464,6 +476,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				703A86821CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m in Sources */,
+				70E418531CD0559900638600 /* GHRepositoryTableViewDataSorceTests.m in Sources */,
+				707DCEFA1CD061A10099F41E /* GHRepositoryController.m in Sources */,
 				703A866E1CCEF77300E6AFA3 /* GHDataSourceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

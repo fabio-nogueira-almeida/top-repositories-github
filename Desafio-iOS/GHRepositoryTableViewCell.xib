@@ -22,14 +22,14 @@
                             <constraint firstAttribute="width" constant="18" id="Mf4-mh-EJY"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIF-Hc-4kK">
-                        <rect key="frame" x="8" y="8" width="42" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIF-Hc-4kK">
+                        <rect key="frame" x="8" y="8" width="494" height="20"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                         <color key="textColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEl-Wd-unk">
-                        <rect key="frame" x="8" y="28" width="40" height="23"/>
+                        <rect key="frame" x="8" y="28" width="494" height="23"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -70,11 +70,13 @@
                 <constraints>
                     <constraint firstItem="Szj-gH-EfH" firstAttribute="centerX" secondItem="PG9-eD-BG8" secondAttribute="centerX" id="2Ei-lN-4Wj"/>
                     <constraint firstAttribute="bottomMargin" secondItem="KHp-6K-bfD" secondAttribute="bottom" constant="2" id="9m0-S9-rka"/>
+                    <constraint firstItem="PG9-eD-BG8" firstAttribute="leading" secondItem="aEl-Wd-unk" secondAttribute="trailing" constant="10" id="CgW-jn-pnz"/>
                     <constraint firstItem="uIF-Hc-4kK" firstAttribute="leading" secondItem="zbs-ft-VBc" secondAttribute="leadingMargin" id="Dso-7i-KDE"/>
                     <constraint firstAttribute="bottomMargin" secondItem="awH-Kz-isZ" secondAttribute="bottom" constant="4" id="Ecf-3G-RQL"/>
                     <constraint firstItem="KHp-6K-bfD" firstAttribute="top" secondItem="aEl-Wd-unk" secondAttribute="bottom" constant="10" id="GnH-zd-dDr"/>
                     <constraint firstItem="RnY-AN-ojw" firstAttribute="leading" secondItem="awH-Kz-isZ" secondAttribute="trailing" constant="10" id="LaU-Ww-QZb"/>
                     <constraint firstItem="aEl-Wd-unk" firstAttribute="leading" secondItem="zbs-ft-VBc" secondAttribute="leadingMargin" id="Q0c-NX-fcW"/>
+                    <constraint firstItem="PG9-eD-BG8" firstAttribute="leading" secondItem="uIF-Hc-4kK" secondAttribute="trailing" constant="10" id="SCR-84-REM"/>
                     <constraint firstItem="KHp-6K-bfD" firstAttribute="leading" secondItem="zbs-ft-VBc" secondAttribute="leadingMargin" id="Ty1-Ze-773"/>
                     <constraint firstItem="PG9-eD-BG8" firstAttribute="centerY" secondItem="zbs-ft-VBc" secondAttribute="centerY" constant="-6" id="Yuk-ad-PJM"/>
                     <constraint firstAttribute="trailingMargin" secondItem="PG9-eD-BG8" secondAttribute="trailing" constant="30" id="alg-By-64D"/>

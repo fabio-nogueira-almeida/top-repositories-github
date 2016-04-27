@@ -58,7 +58,9 @@
     if (indexPath.row < self.repositories.count) {
         cell = (GHRepositoryTableViewCell *)[tableView gh_registerOrReuseCellForClass:[GHRepositoryTableViewCell class]
                                                                             indexPath:indexPath];
-        [cell initializeWithModel:[self.repositories objectAtIndex:indexPath.row]];
+        if (self.repositories.count <= indexPath.row ) {
+            [cell initializeWithModel:[self.repositories objectAtIndex:indexPath.row]];
+        }
     } else {
         cell =
         (GHLoadingTableViewCell *)[tableView gh_registerOrReuseCellForClass:[GHLoadingTableViewCell class]
