@@ -10,8 +10,7 @@
 
 @implementation GHTableViewCell
 
-- (void)initializeWithModel:(id)model {
-    
+- (void)initWithViewModel:(id)model {
 }
 
 @end

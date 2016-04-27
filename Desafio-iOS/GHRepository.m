@@ -7,7 +7,6 @@
 //
 
 #import "GHRepository.h"
-#import "GHOwner.h"
 
 @implementation GHRepository
 

@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class GHOwner;
+#import "GHOwner.h"
 
 @interface GHRepository : NSObject
 
-@property (copy, nonatomic) NSString *codigo;
+@property (copy, nonatomic) NSNumber *codigo;
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *repositoryDescription;
 @property (strong, nonatomic) GHOwner *owner;
