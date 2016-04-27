@@ -10,11 +10,14 @@
 
 @implementation GHOwner
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey {
-    return @{
-        @"login" : @"login",
-        @"avatarURL" : @"avatar_url"
-    };
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    if (self) {
+        self.login = (NSString *)[dictionary objectForKey:@"login"];
+        self.avatarURL = [dictionary objectForKey:@"avatar_url"];
+    }
+    
+    return self;
 }
 
 @end

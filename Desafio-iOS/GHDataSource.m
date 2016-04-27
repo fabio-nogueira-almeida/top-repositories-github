@@ -7,6 +7,9 @@
 //
 
 #import "GHDataSource.h"
+#import "GHHTTPHeader.h"
+#import "GHRepositoryResponse.h"
+
 #import <AFNetworking/AFNetworking.h>
 
 @interface GHDataSource ()
@@ -27,5 +30,25 @@
     
     return _manager;
 }
+
+#pragma mark - Public
+
+- (void)fetchRepository:(NSInteger)page
+                success:(GHPagedRequestSuccess)successBlock {
+    [self.manager GET:@"https://api.github.com/search/repositories?q=language:Java&sort=stars&page=1"
+           parameters:nil
+             progress:nil
+    success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        GHRepositoryResponse *repositories =
+        [[GHRepositoryResponse alloc] initWithDictionary:responseObject];
+        
+        if (successBlock) {
+            return successBlock(repositories.items, NULL);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"error: %@", error.description);
+    }];
+}
+
 
 @end

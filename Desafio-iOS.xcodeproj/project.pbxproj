@@ -27,6 +27,8 @@
 		703A867D1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A867C1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m */; };
 		703A867F1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */; };
 		703A86821CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86811CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m */; };
+		703A86891CD014A600E6AFA3 /* GHHTTPHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86881CD014A600E6AFA3 /* GHHTTPHeader.m */; };
+		703A86921CD017C400E6AFA3 /* GHRepositoryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86911CD017C400E6AFA3 /* GHRepositoryResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,10 @@
 		703A867C1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTableViewCell.m; sourceTree = "<group>"; };
 		703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHRepositoryTableViewCell.xib; sourceTree = "<group>"; };
 		703A86811CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryControllerTest.m; sourceTree = "<group>"; };
+		703A86871CD014A600E6AFA3 /* GHHTTPHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHHTTPHeader.h; sourceTree = "<group>"; };
+		703A86881CD014A600E6AFA3 /* GHHTTPHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHHTTPHeader.m; sourceTree = "<group>"; };
+		703A86901CD017C400E6AFA3 /* GHRepositoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryResponse.h; sourceTree = "<group>"; };
+		703A86911CD017C400E6AFA3 /* GHRepositoryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +217,7 @@
 		703A865E1CCEF07600E6AFA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				703A868F1CD017B700E6AFA3 /* Response */,
 				703A86621CCEF38A00E6AFA3 /* GHRepository.h */,
 				703A86631CCEF38A00E6AFA3 /* GHRepository.m */,
 				703A86651CCEF53000E6AFA3 /* GHOwner.h */,
@@ -232,6 +239,8 @@
 				703A86341CCEEBA500E6AFA3 /* Info.plist */,
 				703A86261CCEEBA500E6AFA3 /* AppDelegate.h */,
 				703A86271CCEEBA500E6AFA3 /* AppDelegate.m */,
+				703A86871CD014A600E6AFA3 /* GHHTTPHeader.h */,
+				703A86881CD014A600E6AFA3 /* GHHTTPHeader.m */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -280,6 +289,15 @@
 				703A86811CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		703A868F1CD017B700E6AFA3 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				703A86901CD017C400E6AFA3 /* GHRepositoryResponse.h */,
+				703A86911CD017C400E6AFA3 /* GHRepositoryResponse.m */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,8 +434,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				703A867D1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m in Sources */,
+				703A86891CD014A600E6AFA3 /* GHHTTPHeader.m in Sources */,
 				703A86791CCEFE3700E6AFA3 /* GHRepositoryController.m in Sources */,
 				703A86641CCEF38A00E6AFA3 /* GHRepository.m in Sources */,
+				703A86921CD017C400E6AFA3 /* GHRepositoryResponse.m in Sources */,
 				703A86281CCEEBA500E6AFA3 /* AppDelegate.m in Sources */,
 				703A866B1CCEF71500E6AFA3 /* GHDataSource.m in Sources */,
 				703A86251CCEEBA500E6AFA3 /* main.m in Sources */,

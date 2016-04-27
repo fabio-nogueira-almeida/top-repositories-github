@@ -7,24 +7,22 @@
 //
 
 #import "GHRepository.h"
+#import "GHOwner.h"
 
 @implementation GHRepository
 
-#pragma mark - MTLJSONSerializing
-
-+ (NSDictionary *)JSONKeyPathsByPropertyKey {
-    return @{
-        @"codigo" : @"id",
-        @"name" : @"name",
-        @"repositoryDescription" : @"description",
-        @"owner" : @"owner",
-        @"forks" : @"forks",
-        @"stars" : @"stars"
-    };
-}
-
-+ (NSValueTransformer *)ownerJSONTransformer {
-    return [MTLJSONAdapter arrayTransformerWithModelClass:[GHOwner class]];
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    if (self) {
+        self.codigo = [dictionary objectForKey:@"id"];
+        self.name = [dictionary objectForKey:@"name"];
+        self.repositoryDescription = [dictionary objectForKey:@"description"];
+        self.forks = [dictionary objectForKey:@"forks"];
+        self.stars = [dictionary objectForKey:@"stars"];
+        self.owner = [[GHOwner alloc] initWithDictionary:[dictionary objectForKey:@"owner"]];
+    }
+    
+    return self;
 }
 
 @end

@@ -9,6 +9,8 @@
 #import <XCTest/XCTest.h>
 #import <AFNetworking/AFNetworking.h>
 
+#import "GHRepositoryResponse.h"
+
 @interface GHDataSourceTest : XCTestCase
 
 @property (strong, nonatomic) AFHTTPSessionManager *manager;

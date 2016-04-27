@@ -7,16 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Mantle/Mantle.h>
-#import "GHOwner.h"
 
-@interface GHRepository : MTLModel <MTLJSONSerializing>
+@class GHOwner;
+
+@interface GHRepository : NSObject
 
 @property (copy, nonatomic) NSString *codigo;
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *repositoryDescription;
-@property (copy, nonatomic) GHOwner *owner;
+@property (strong, nonatomic) GHOwner *owner;
 @property (copy, nonatomic) NSNumber *forks;
 @property (copy, nonatomic) NSNumber *stars;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end

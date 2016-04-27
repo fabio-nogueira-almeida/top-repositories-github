@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Mantle/Mantle.h>
 
-@interface GHOwner : MTLModel <MTLJSONSerializing>
+@interface GHOwner : NSObject
 
 @property (copy, nonatomic) NSString *login;
 @property (copy, nonatomic) NSString *avatarURL;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
