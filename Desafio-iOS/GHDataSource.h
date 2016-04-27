@@ -11,7 +11,7 @@
 @class GHRepositoryResponse;
 @class GHHTTPHeader;
 
-typedef void(^GHPagedRequestSuccess) (__strong NSArray *repositories, __strong GHHTTPHeader *header);
+typedef void(^GHPagedRequestSuccess) (__strong NSArray *repositories, NSInteger totalRepository);
 
 @interface GHDataSource : NSObject
 

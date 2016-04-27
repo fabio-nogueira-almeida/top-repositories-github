@@ -21,8 +21,8 @@
     [super setUp];
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
                                                              bundle:nil];
-    UIViewController *nav = [mainStoryboard instantiateInitialViewController];
-    self.repositoryController = (GHRepositoryController *)nav;
+    UINavigationController *nav = [mainStoryboard instantiateInitialViewController];
+    self.repositoryController = (GHRepositoryController *)[nav visibleViewController];
 }
 
 - (void)tearDown {
@@ -32,6 +32,5 @@
 - (void)testShouldVerifyIfTheFirstControllerIsRepositoryController {
     XCTAssertEqualObjects(self.repositoryController.class, [GHRepositoryController class]);
 }
-
 
 @end

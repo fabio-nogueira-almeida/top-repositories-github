@@ -7,20 +7,63 @@
 //
 
 #import "GHRepositoryTableViewDataSource.h"
+
 #import "GHRepositoryTableViewCell.h"
+#import "GHLoadingTableViewCell.h"
+
 #import "UITableView+Extension.h"
+
+@interface GHRepositoryTableViewDataSource ()
+
+@property (strong, nonatomic) NSMutableArray *repositories;
+@property (nonatomic) NSInteger totalRepository;
+
+@end
 
 @implementation GHRepositoryTableViewDataSource
 
+#pragma mark - Getter
+
+- (NSMutableArray *)repositories {
+    if (!_repositories) {
+        _repositories = [NSMutableArray array];
+    }
+    
+    return _repositories;
+}
+
+#pragma makr - Private
+
+- (void)reloadTableViewDataSource:(NSArray *)repositories
+                  totalRepository:(NSInteger)totalRepository {
+    [self.repositories addObjectsFromArray:repositories];
+    self.totalRepository = totalRepository;
+}
+
+#pragma mark - UITableViewDataSource
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.repositories.count;
+    NSInteger numberOfRows = self.repositories.count;
+    
+    if (numberOfRows < self.totalRepository) {
+        numberOfRows++;
+    }
+    
+    return numberOfRows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    GHRepositoryTableViewCell *cell =
-    (GHRepositoryTableViewCell *)[tableView gh_registerOrReuseCellForClass:[GHRepositoryTableViewCell class]
-                                                                 indexPath:indexPath];
-    [cell initializeWithModel:[self.repositories objectAtIndex:indexPath.row]];
+    GHTableViewCell *cell;
+    
+    if (indexPath.row < self.repositories.count) {
+        cell = (GHRepositoryTableViewCell *)[tableView gh_registerOrReuseCellForClass:[GHRepositoryTableViewCell class]
+                                                                            indexPath:indexPath];
+        [cell initializeWithModel:[self.repositories objectAtIndex:indexPath.row]];
+    } else {
+        cell =
+        (GHLoadingTableViewCell *)[tableView gh_registerOrReuseCellForClass:[GHLoadingTableViewCell class]
+                                                                  indexPath:indexPath];
+    }
     
     return cell;
 }

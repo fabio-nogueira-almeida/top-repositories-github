@@ -7,7 +7,6 @@
 //
 
 #import "GHDataSource.h"
-#import "GHHTTPHeader.h"
 #import "GHRepositoryResponse.h"
 
 #import <AFNetworking/AFNetworking.h>
@@ -45,9 +44,10 @@
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         GHRepositoryResponse *repositories =
         [[GHRepositoryResponse alloc] initWithDictionary:responseObject];
-        
+        NSString *totalCount = [responseObject objectForKey:@"total_count"];
+
         if (successBlock) {
-            return successBlock(repositories.items, NULL);
+            return successBlock(repositories.items, totalCount.integerValue);
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

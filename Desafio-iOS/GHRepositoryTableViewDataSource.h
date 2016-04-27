@@ -10,6 +10,7 @@
 
 @interface GHRepositoryTableViewDataSource : NSObject <UITableViewDataSource>
 
-@property (strong, nonatomic) NSArray *repositories;
+- (void)reloadTableViewDataSource:(NSArray *)repositories
+                  totalRepository:(NSInteger)totalRepository;
 
 @end

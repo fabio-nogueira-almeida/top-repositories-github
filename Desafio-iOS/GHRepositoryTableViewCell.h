@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "GHRepository.h"
+#import "GHTableViewCell.h"
 
-@interface GHRepositoryTableViewCell : UITableViewCell
+@interface GHRepositoryTableViewCell : GHTableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
@@ -19,6 +20,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *forkLabel;
 @property (weak, nonatomic) IBOutlet UILabel *starLabel;
 
-- (void)initializeWithModel:(GHRepository *)model;
+- (void)initializeWithModel:(id)model;
 
 @end

@@ -12,8 +12,9 @@
 
 #pragma mark - Initialize
 
-- (void)initializeWithModel:(GHRepository *)model {
-    self.nameLabel.text = model.name;
+- (void)initializeWithModel:(id)model {
+    GHRepository *repository = (GHRepository *)model;
+    self.nameLabel.text = repository.name;
 }
 
 @end
