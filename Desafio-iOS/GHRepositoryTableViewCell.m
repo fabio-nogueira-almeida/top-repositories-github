@@ -14,6 +14,8 @@
 
 - (void)initializeWithModel:(id)model {
     GHRepository *repository = (GHRepository *)model;
+    self.imageView.clipsToBounds = YES;
+    self.imageView.layer.cornerRadius = CGRectGetWidth(self.imageView.frame) / 2;
     self.nameLabel.text = repository.name;
 }
 
