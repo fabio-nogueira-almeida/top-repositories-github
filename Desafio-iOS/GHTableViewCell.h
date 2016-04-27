@@ -10,6 +10,6 @@
 
 @interface GHTableViewCell : UITableViewCell
 
-- (void)initWithViewModel:(id)model;
+- (void)initWithModel:(id)model;
 
 @end

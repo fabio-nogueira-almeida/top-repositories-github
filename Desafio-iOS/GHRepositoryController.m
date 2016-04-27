@@ -9,7 +9,11 @@
 #import "GHRepositoryController.h"
 #import "GHRepositoryTableViewDataSource.h"
 #import "GHDataSource.h"
+
+#import "GHRepositoryTableViewCell.h"
 #import "GHLoadingTableViewCell.h"
+
+#import "GHPullRequestController.h"
 
 @interface GHRepositoryController () <UITableViewDelegate>
 
@@ -72,13 +76,23 @@
     [self fetchRepositoryWithPage:self.currentPage];
 }
 
-#pragma mark - UITableVieDelegate
+#pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([cell isKindOfClass:[GHLoadingTableViewCell class]]) {
         self.currentPage++;
         [self fetchRepositoryWithPage:self.currentPage];
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    GHRepositoryTableViewCell *cell =
+    (GHRepositoryTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+    
+    GHPullRequestController *pullRequestController = [[GHPullRequestController alloc] init];
+    [pullRequestController createWithRepository:cell.model.name
+                                           user:cell.model.owner.login];
+    [self.navigationController pushViewController:pullRequestController animated:YES];
 }
 
 @end

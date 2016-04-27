@@ -22,10 +22,11 @@
 
 #pragma mark - Initialize
 
-- (void)initWithViewModel:(id)model {
-    [super initWithViewModel:model];
-    GHRepositoryViewModel *viewModel = (GHRepositoryViewModel *)model;
+- (void)initWithModel:(id)model {
+    [super initWithModel:model];
+    self.model = model;
     
+    GHRepositoryViewModel *viewModel = [[GHRepositoryViewModel alloc] initWithModel:model];
     self.nameLabel.text = viewModel.repositoryName;
     self.descriptionLabel.text = viewModel.repositoryDescription;
     self.forkLabel.text = viewModel.forks;

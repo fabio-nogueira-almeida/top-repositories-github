@@ -59,7 +59,7 @@
     [self waitForExpectationsWithTimeout:5 handler:nil];
 }
 
-- (void)testPullRequyestFetch {
+- (void)testPullRequestFetch {
     XCTestExpectation *expectation = [self expectationWithDescription:@"fetching repositories"];
     
     [self.manager GET:@"https://api.github.com/repos/facebook/react-native/pulls"

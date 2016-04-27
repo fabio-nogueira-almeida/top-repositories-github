@@ -65,12 +65,15 @@
              progress:nil
     success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
-//        GHRepositoryResponse *repositories =
-//        [[GHRepositoryResponse alloc] initWithDictionary:responseObject];
 
+        NSMutableArray *pullRequests = [NSMutableArray array];
+        for (id object in responseObject) {
+            GHPullRequest *pull = [[GHPullRequest alloc] initWithDictionary:object];
+            [pullRequests addObject:pull];
+        }
+     
         if (successBlock) {
-            return successBlock(nil);
+            return successBlock(pullRequests);
         }
       
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

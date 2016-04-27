@@ -61,8 +61,7 @@
         cell = (GHRepositoryTableViewCell *)[tableView gh_registerOrReuseCellForClass:[GHRepositoryTableViewCell class]
                                                                             indexPath:indexPath];
         if (indexPath.row <= self.repositories.count) {
-            GHRepositoryViewModel *viewModel = [[GHRepositoryViewModel alloc] initWithModel:[self.repositories objectAtIndex:indexPath.row]];
-            [cell initWithViewModel:viewModel];
+            [cell initWithModel:[self.repositories objectAtIndex:indexPath.row]];
         }
     } else {
         cell =
