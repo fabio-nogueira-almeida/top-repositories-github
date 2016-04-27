@@ -7,16 +7,35 @@
 //
 
 #import "GHRepositoryTableViewCell.h"
+#import "GHRepositoryViewModel.h"
+
+#import <PINRemoteImage/PINImageView+PINRemoteImage.h>
 
 @implementation GHRepositoryTableViewCell
 
-#pragma mark - Initialize
+#pragma mark - Private
 
-- (void)initializeWithModel:(id)model {
-    GHRepository *repository = (GHRepository *)model;
+- (void)imageViewCornerRadius {
     self.imageView.clipsToBounds = YES;
     self.imageView.layer.cornerRadius = CGRectGetWidth(self.imageView.frame) / 2;
-    self.nameLabel.text = repository.name;
+}
+
+#pragma mark - Initialize
+
+- (void)initWithViewModel:(id)model {
+    [super initWithViewModel:model];
+    GHRepositoryViewModel *viewModel = (GHRepositoryViewModel *)model;
+    
+    self.nameLabel.text = viewModel.repositoryName;
+    self.descriptionLabel.text = viewModel.repositoryDescription;
+    self.forkLabel.text = viewModel.forks;
+    self.starLabel.text = viewModel.stars;
+    self.userLabel.text = viewModel.username;
+    
+    [self.userImageView setPin_updateWithProgress:YES];
+    [self.userImageView pin_setImageFromURL:viewModel.userImageURL];
+    
+    [self imageViewCornerRadius];
 }
 
 @end

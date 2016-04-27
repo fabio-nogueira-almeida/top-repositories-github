@@ -51,7 +51,7 @@
 }
 
 - (void)testShouldVerifyUserImageIsURLType {
-    XCTAssertEqualObjects([self.viewModel.userImageURL class], [NSURL class],);
+    XCTAssertEqual([self.viewModel.userImageURL class], [NSURL class],);
 }
 
 @end

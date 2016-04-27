@@ -12,24 +12,30 @@
 		703A862E1CCEEBA500E6AFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A862C1CCEEBA500E6AFA3 /* Main.storyboard */; };
 		703A86301CCEEBA500E6AFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 703A862F1CCEEBA500E6AFA3 /* Assets.xcassets */; };
 		703A86331CCEEBA500E6AFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A86311CCEEBA500E6AFA3 /* LaunchScreen.storyboard */; };
-		703A86581CCEEFAC00E6AFA3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; };
 		703A86641CCEF38A00E6AFA3 /* GHRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86631CCEF38A00E6AFA3 /* GHRepository.m */; };
 		703A86671CCEF53000E6AFA3 /* GHOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86661CCEF53000E6AFA3 /* GHOwner.m */; };
 		703A866B1CCEF71500E6AFA3 /* GHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A866A1CCEF71500E6AFA3 /* GHDataSource.m */; };
 		703A866E1CCEF77300E6AFA3 /* GHDataSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A866D1CCEF77300E6AFA3 /* GHDataSourceTest.m */; };
-		703A866F1CCEF7BF00E6AFA3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; };
-		703A86731CCEFA8100E6AFA3 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		703A86791CCEFE3700E6AFA3 /* GHRepositoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */; };
 		703A867D1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A867C1CCF7E1D00E6AFA3 /* GHRepositoryTableViewCell.m */; };
 		703A867F1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703A867E1CCF7E3B00E6AFA3 /* GHRepositoryTableViewCell.xib */; };
 		703A86821CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86811CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m */; };
 		703A86921CD017C400E6AFA3 /* GHRepositoryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86911CD017C400E6AFA3 /* GHRepositoryResponse.m */; };
+		7075030C1CD171620020E9EB /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707503081CD171620020E9EB /* OCMock.framework */; };
+		7075030D1CD171620020E9EB /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707503091CD171620020E9EB /* AFNetworking.framework */; };
+		7075030E1CD171620020E9EB /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7075030A1CD171620020E9EB /* PINRemoteImage.framework */; };
+		7075030F1CD171620020E9EB /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7075030B1CD171620020E9EB /* PINCache.framework */; };
+		707503101CD172840020E9EB /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707503081CD171620020E9EB /* OCMock.framework */; };
+		707503111CD172EA0020E9EB /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707503081CD171620020E9EB /* OCMock.framework */; };
+		707503121CD172EA0020E9EB /* OCMock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 707503081CD171620020E9EB /* OCMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		707503141CD173070020E9EB /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707503091CD171620020E9EB /* AFNetworking.framework */; };
+		707503151CD173070020E9EB /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 707503091CD171620020E9EB /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		707503161CD1731C0020E9EB /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7075030A1CD171620020E9EB /* PINRemoteImage.framework */; };
+		707503171CD1731C0020E9EB /* PINRemoteImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7075030A1CD171620020E9EB /* PINRemoteImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		707503181CD1731C0020E9EB /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7075030B1CD171620020E9EB /* PINCache.framework */; };
+		707503191CD1731C0020E9EB /* PINCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7075030B1CD171620020E9EB /* PINCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		707DCEFD1CD15CAD0099F41E /* GHRepositoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DCEFC1CD15CAD0099F41E /* GHRepositoryViewModel.m */; };
 		707DCEFF1CD15E220099F41E /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 707DCEFE1CD15E220099F41E /* Cartfile */; };
-		707DCF0C1CD163BA0099F41E /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707DCF0A1CD163BA0099F41E /* PINRemoteImage.framework */; };
-		707DCF0D1CD163BA0099F41E /* PINRemoteImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 707DCF0A1CD163BA0099F41E /* PINRemoteImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		707DCF0E1CD163BA0099F41E /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707DCF0B1CD163BA0099F41E /* PINCache.framework */; };
-		707DCF0F1CD163BA0099F41E /* PINCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 707DCF0B1CD163BA0099F41E /* PINCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		707DCF131CD165900099F41E /* GHViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 707DCF121CD165900099F41E /* GHViewModelTest.m */; };
 		70E418431CD047A500638600 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418421CD047A500638600 /* UITableView+Extension.m */; };
 		70E4184A1CD04E6400638600 /* GHLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418481CD04E6400638600 /* GHLoadingTableViewCell.m */; };
@@ -37,9 +43,6 @@
 		70E4184E1CD04F7300638600 /* GHRepositoryTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4184D1CD04F7300638600 /* GHRepositoryTableViewDataSource.m */; };
 		70E418511CD0502700638600 /* GHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418501CD0502700638600 /* GHTableViewCell.m */; };
 		70E418531CD0559900638600 /* GHRepositoryTableViewDataSorceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418521CD0559900638600 /* GHRepositoryTableViewDataSorceTests.m */; };
-		70E418551CD0594700638600 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E418541CD0594700638600 /* OCMock.framework */; };
-		70E418571CD05A1400638600 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E418541CD0594700638600 /* OCMock.framework */; };
-		70E418591CD05A4600638600 /* OCMock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70E418541CD0594700638600 /* OCMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,16 +63,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		703A86761CCEFA8200E6AFA3 /* Embed Frameworks */ = {
+		707503131CD172EB0020E9EB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				707DCF0D1CD163BA0099F41E /* PINRemoteImage.framework in Embed Frameworks */,
-				707DCF0F1CD163BA0099F41E /* PINCache.framework in Embed Frameworks */,
-				70E418591CD05A4600638600 /* OCMock.framework in Embed Frameworks */,
-				703A86731CCEFA8100E6AFA3 /* AFNetworking.framework in Embed Frameworks */,
+				707503171CD1731C0020E9EB /* PINRemoteImage.framework in Embed Frameworks */,
+				707503191CD1731C0020E9EB /* PINCache.framework in Embed Frameworks */,
+				707503121CD172EA0020E9EB /* OCMock.framework in Embed Frameworks */,
+				707503151CD173070020E9EB /* AFNetworking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +92,6 @@
 		703A863F1CCEEBA500E6AFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703A86441CCEEBA500E6AFA3 /* Desafio-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		703A864A1CCEEBA500E6AFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		703A86621CCEF38A00E6AFA3 /* GHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepository.h; sourceTree = "<group>"; };
 		703A86631CCEF38A00E6AFA3 /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepository.m; sourceTree = "<group>"; };
 		703A86651CCEF53000E6AFA3 /* GHOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHOwner.h; sourceTree = "<group>"; };
@@ -105,11 +107,13 @@
 		703A86811CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryControllerTest.m; sourceTree = "<group>"; };
 		703A86901CD017C400E6AFA3 /* GHRepositoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryResponse.h; sourceTree = "<group>"; };
 		703A86911CD017C400E6AFA3 /* GHRepositoryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryResponse.m; sourceTree = "<group>"; };
+		707503081CD171620020E9EB /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
+		707503091CD171620020E9EB /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		7075030A1CD171620020E9EB /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
+		7075030B1CD171620020E9EB /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		707DCEFB1CD15CAD0099F41E /* GHRepositoryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepositoryViewModel.h; sourceTree = "<group>"; };
 		707DCEFC1CD15CAD0099F41E /* GHRepositoryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryViewModel.m; sourceTree = "<group>"; };
 		707DCEFE1CD15E220099F41E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		707DCF0A1CD163BA0099F41E /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
-		707DCF0B1CD163BA0099F41E /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		707DCF121CD165900099F41E /* GHViewModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHViewModelTest.m; sourceTree = "<group>"; };
 		70E418411CD047A500638600 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		70E418421CD047A500638600 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
@@ -121,7 +125,6 @@
 		70E4184F1CD0502700638600 /* GHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTableViewCell.h; sourceTree = "<group>"; };
 		70E418501CD0502700638600 /* GHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHTableViewCell.m; sourceTree = "<group>"; };
 		70E418521CD0559900638600 /* GHRepositoryTableViewDataSorceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTableViewDataSorceTests.m; sourceTree = "<group>"; };
-		70E418541CD0594700638600 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +132,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				707DCF0C1CD163BA0099F41E /* PINRemoteImage.framework in Frameworks */,
-				707DCF0E1CD163BA0099F41E /* PINCache.framework in Frameworks */,
-				70E418551CD0594700638600 /* OCMock.framework in Frameworks */,
-				703A86581CCEEFAC00E6AFA3 /* AFNetworking.framework in Frameworks */,
+				7075030C1CD171620020E9EB /* OCMock.framework in Frameworks */,
+				707503181CD1731C0020E9EB /* PINCache.framework in Frameworks */,
+				707503141CD173070020E9EB /* AFNetworking.framework in Frameworks */,
+				707503111CD172EA0020E9EB /* OCMock.framework in Frameworks */,
+				707503161CD1731C0020E9EB /* PINRemoteImage.framework in Frameworks */,
+				7075030D1CD171620020E9EB /* AFNetworking.framework in Frameworks */,
+				7075030E1CD171620020E9EB /* PINRemoteImage.framework in Frameworks */,
+				7075030F1CD171620020E9EB /* PINCache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70E418571CD05A1400638600 /* OCMock.framework in Frameworks */,
-				703A866F1CCEF7BF00E6AFA3 /* AFNetworking.framework in Frameworks */,
+				707503101CD172840020E9EB /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +223,10 @@
 		703A865A1CCEF05500E6AFA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				707DCF0A1CD163BA0099F41E /* PINRemoteImage.framework */,
-				707DCF0B1CD163BA0099F41E /* PINCache.framework */,
-				70E418541CD0594700638600 /* OCMock.framework */,
-				703A86561CCEEFAC00E6AFA3 /* AFNetworking.framework */,
+				707503081CD171620020E9EB /* OCMock.framework */,
+				707503091CD171620020E9EB /* AFNetworking.framework */,
+				7075030A1CD171620020E9EB /* PINRemoteImage.framework */,
+				7075030B1CD171620020E9EB /* PINCache.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -360,7 +366,7 @@
 				703A861C1CCEEBA500E6AFA3 /* Sources */,
 				703A861D1CCEEBA500E6AFA3 /* Frameworks */,
 				703A861E1CCEEBA500E6AFA3 /* Resources */,
-				703A86761CCEFA8200E6AFA3 /* Embed Frameworks */,
+				707503131CD172EB0020E9EB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

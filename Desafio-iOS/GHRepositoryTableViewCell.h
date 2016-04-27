@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GHRepository.h"
 #import "GHTableViewCell.h"
 
 @interface GHRepositoryTableViewCell : GHTableViewCell
@@ -20,6 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *forkLabel;
 @property (weak, nonatomic) IBOutlet UILabel *starLabel;
 
-- (void)initializeWithModel:(id)model;
+- (void)initWithViewModel:(id)model;
 
 @end

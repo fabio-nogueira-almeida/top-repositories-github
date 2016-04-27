@@ -17,7 +17,7 @@
         self.name = [dictionary objectForKey:@"name"];
         self.repositoryDescription = [dictionary objectForKey:@"description"];
         self.forks = [dictionary objectForKey:@"forks"];
-        self.stars = [dictionary objectForKey:@"stars"];
+        self.stars = [dictionary objectForKey:@"stargazers_count"];
         self.owner = [[GHOwner alloc] initWithDictionary:[dictionary objectForKey:@"owner"]];
     }
     

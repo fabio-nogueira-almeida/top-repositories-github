@@ -28,10 +28,20 @@
     if (self) {
         self.repositoryName = model.name;
         self.repositoryDescription = model.repositoryDescription;
-        self.forks = model.forks.stringValue;
-        self.stars = model.stars.stringValue;
         self.username = model.owner.login;
         self.userImageURL = [NSURL URLWithString:model.owner.avatarURL];
+        
+        NSString *forks = @"0";
+        if (model.forks) {
+            forks = model.forks.stringValue;
+        }
+        self.forks = forks;
+
+        NSString *stars = @"0";
+        if (model.stars) {
+            stars = model.stars.stringValue;
+        }
+        self.stars = stars;
     }
     
     return self;

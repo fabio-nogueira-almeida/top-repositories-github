@@ -11,6 +11,8 @@
 #import "GHRepositoryTableViewCell.h"
 #import "GHLoadingTableViewCell.h"
 
+#import "GHRepositoryViewModel.h"
+
 #import "UITableView+Extension.h"
 
 @interface GHRepositoryTableViewDataSource ()
@@ -58,8 +60,9 @@
     if (indexPath.row < self.repositories.count) {
         cell = (GHRepositoryTableViewCell *)[tableView gh_registerOrReuseCellForClass:[GHRepositoryTableViewCell class]
                                                                             indexPath:indexPath];
-        if (self.repositories.count <= indexPath.row ) {
-            [cell initWithViewModel:[self.repositories objectAtIndex:indexPath.row]];
+        if (indexPath.row <= self.repositories.count) {
+            GHRepositoryViewModel *viewModel = [[GHRepositoryViewModel alloc] initWithModel:[self.repositories objectAtIndex:indexPath.row]];
+            [cell initWithViewModel:viewModel];
         }
     } else {
         cell =
