@@ -10,4 +10,12 @@
 
 @implementation GHRepositoryController
 
+#pragma mark - ViewController 
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"Github JavaPop";
+    
+}
+
 @end
