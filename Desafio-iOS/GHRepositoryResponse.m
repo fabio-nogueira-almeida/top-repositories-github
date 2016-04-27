@@ -11,20 +11,30 @@
 
 @implementation GHRepositoryResponse
 
+#pragma mark - Private
+
+- (void)repositoriesFromDictionary:(NSDictionary *)dictionary {
+    if ([dictionary objectForKey:@"items"]) {
+        NSMutableArray *repositories = [NSMutableArray array];
+        
+        NSArray *items = [dictionary objectForKey:@"items"];
+        for (NSDictionary *item in items) {
+            GHRepository *repository = [[GHRepository alloc] initWithDictionary:item];
+            [repositories addObject:repository];
+        }
+        
+        self.items = [NSArray arrayWithArray:repositories];
+    }
+}
+
+#pragma mark - Initialize
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
         self.totalCount = [dictionary objectForKey:@"total_count"];
         self.incompleteStatus = [dictionary objectForKey:@"incomplete_status"];
-        if ([dictionary objectForKey:@"items"]) {
-            NSMutableArray *repositories = [NSMutableArray array];
-            NSArray *items = [dictionary objectForKey:@"items"];
-            for (NSDictionary *item in items) {
-                GHRepository *repository = [[GHRepository alloc] initWithDictionary:item];
-                [repositories addObject:repository];
-            }
-            self.items = [NSArray arrayWithArray:repositories];
-        }
+        [self repositoriesFromDictionary:dictionary];
     }
     return self;
 }
