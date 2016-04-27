@@ -10,13 +10,13 @@
 #import "GHRepository.h"
 #import "GHRepositoryViewModel.h"
 
-@interface GHViewModelTest : XCTestCase
+@interface GHRepositoryViewModelTest : XCTestCase
 
 @property (strong, nonatomic) GHRepositoryViewModel *viewModel;
 
 @end
 
-@implementation GHViewModelTest
+@implementation GHRepositoryViewModelTest
 
 #pragma mark - Private
 
@@ -25,8 +25,8 @@
         repository.codigo = @1;
         repository.name = @"GHChallenge";
         repository.repositoryDescription = @"app for the GH Challenge";
-        repository.forks = @0;
-        repository.stars = @0;
+        repository.forks = @123;
+        repository.stars = nil;
         GHOwner *owner = [[GHOwner alloc] init];
         owner.login = @"fabiotk";
         owner.avatarURL = @"https://avatars3.githubusercontent.com/u/1563019?v=3&s=460";
@@ -52,6 +52,10 @@
 
 - (void)testShouldVerifyUserImageIsURLType {
     XCTAssertEqual([self.viewModel.userImageURL class], [NSURL class],);
+}
+
+- (void)testShouldNotReturnNilIfDonstHasStars {
+    XCTAssertEqualObjects(self.viewModel.stars, @"0");
 }
 
 @end
