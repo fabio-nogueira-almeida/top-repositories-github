@@ -44,10 +44,10 @@
 
 #pragma mark - Private
 
-#warning TODO - Params
-
 - (void)fetchPullRequests {
-    [self.dataSource fetchPullRequestSuccess:^(NSArray *pullRequests) {
+    [self.dataSource fetchPullRequestForRepository:self.repository
+                                             owner:self.ownerName
+    success:^(NSArray *pullRequests) {
         [self.tableViewDataSource reloadTableViewDataSource:pullRequests];
         [self.tableView reloadData];
     }];

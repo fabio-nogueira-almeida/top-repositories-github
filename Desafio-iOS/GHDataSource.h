@@ -19,6 +19,8 @@ typedef void(^GHPullRequestRequestSuccess) (__strong NSArray *pullRequests);
 - (void)fetchRepositoryForPage:(NSInteger)page
                        success:(GHPagedRequestSuccess)successBlock;
 
-- (void)fetchPullRequestSuccess:(GHPullRequestRequestSuccess)successBlock;
+- (void)fetchPullRequestForRepository:(NSString *)repository
+                                owner:(NSString *)owner
+                              success:(GHPullRequestRequestSuccess)successBlock;
 
 @end

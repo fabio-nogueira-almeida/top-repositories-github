@@ -57,10 +57,15 @@
     }];
 }
 
-- (void)fetchPullRequestSuccess:(GHPullRequestRequestSuccess)successBlock {
+- (void)fetchPullRequestForRepository:(NSString *)repository
+                                owner:(NSString *)owner
+                              success:(GHPullRequestRequestSuccess)successBlock {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
-    [self.manager GET:@"https://api.github.com/repos/facebook/react-native/pulls"
+    NSString *url =
+    [NSString stringWithFormat:@"https://api.github.com/repos/%@/%@/pulls", owner, repository];
+    
+    [self.manager GET:url
            parameters:nil
              progress:nil
     success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
