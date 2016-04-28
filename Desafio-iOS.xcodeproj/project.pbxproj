@@ -42,6 +42,8 @@
 		7088CB4A1CD1847C00EE128A /* GHPullRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB481CD1847C00EE128A /* GHPullRequestController.m */; };
 		7088CB541CD18A7400EE128A /* GHPullRequestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB521CD18A7400EE128A /* GHPullRequestTableViewCell.m */; };
 		7088CB551CD18A7400EE128A /* GHPullRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7088CB531CD18A7400EE128A /* GHPullRequestTableViewCell.xib */; };
+		7088CB581CD18D6200EE128A /* GHPullRequestTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB571CD18D6200EE128A /* GHPullRequestTableViewDataSource.m */; };
+		7088CB5F1CD1935D00EE128A /* GHPullRequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB5E1CD1935D00EE128A /* GHPullRequestViewModel.m */; };
 		70E418431CD047A500638600 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418421CD047A500638600 /* UITableView+Extension.m */; };
 		70E4184A1CD04E6400638600 /* GHLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418481CD04E6400638600 /* GHLoadingTableViewCell.m */; };
 		70E4184B1CD04E6400638600 /* GHLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E418491CD04E6400638600 /* GHLoadingTableViewCell.xib */; };
@@ -129,6 +131,10 @@
 		7088CB511CD18A7400EE128A /* GHPullRequestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHPullRequestTableViewCell.h; sourceTree = "<group>"; };
 		7088CB521CD18A7400EE128A /* GHPullRequestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPullRequestTableViewCell.m; sourceTree = "<group>"; };
 		7088CB531CD18A7400EE128A /* GHPullRequestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHPullRequestTableViewCell.xib; sourceTree = "<group>"; };
+		7088CB561CD18D6200EE128A /* GHPullRequestTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHPullRequestTableViewDataSource.h; sourceTree = "<group>"; };
+		7088CB571CD18D6200EE128A /* GHPullRequestTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPullRequestTableViewDataSource.m; sourceTree = "<group>"; };
+		7088CB5D1CD1935D00EE128A /* GHPullRequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHPullRequestViewModel.h; sourceTree = "<group>"; };
+		7088CB5E1CD1935D00EE128A /* GHPullRequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPullRequestViewModel.m; sourceTree = "<group>"; };
 		70E418411CD047A500638600 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		70E418421CD047A500638600 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		70E418471CD04E6400638600 /* GHLoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHLoadingTableViewCell.h; sourceTree = "<group>"; };
@@ -287,6 +293,8 @@
 			children = (
 				707DCEFB1CD15CAD0099F41E /* GHRepositoryViewModel.h */,
 				707DCEFC1CD15CAD0099F41E /* GHRepositoryViewModel.m */,
+				7088CB5D1CD1935D00EE128A /* GHPullRequestViewModel.h */,
+				7088CB5E1CD1935D00EE128A /* GHPullRequestViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -391,6 +399,8 @@
 			children = (
 				7088CB471CD1847C00EE128A /* GHPullRequestController.h */,
 				7088CB481CD1847C00EE128A /* GHPullRequestController.m */,
+				7088CB561CD18D6200EE128A /* GHPullRequestTableViewDataSource.h */,
+				7088CB571CD18D6200EE128A /* GHPullRequestTableViewDataSource.m */,
 			);
 			name = PullRequest;
 			sourceTree = "<group>";
@@ -539,9 +549,11 @@
 				7088CB411CD1800100EE128A /* GHUser.m in Sources */,
 				707DCEFD1CD15CAD0099F41E /* GHRepositoryViewModel.m in Sources */,
 				703A86921CD017C400E6AFA3 /* GHRepositoryResponse.m in Sources */,
+				7088CB581CD18D6200EE128A /* GHPullRequestTableViewDataSource.m in Sources */,
 				703A86281CCEEBA500E6AFA3 /* AppDelegate.m in Sources */,
 				70E418511CD0502700638600 /* GHTableViewCell.m in Sources */,
 				70E4184E1CD04F7300638600 /* GHRepositoryTableViewDataSource.m in Sources */,
+				7088CB5F1CD1935D00EE128A /* GHPullRequestViewModel.m in Sources */,
 				703A866B1CCEF71500E6AFA3 /* GHDataSource.m in Sources */,
 				70E418431CD047A500638600 /* UITableView+Extension.m in Sources */,
 				7088CB3E1CD17F2000EE128A /* GHPullRequest.m in Sources */,

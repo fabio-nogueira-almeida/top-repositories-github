@@ -11,6 +11,7 @@
 @implementation GHTableViewCell
 
 - (void)initWithModel:(id)model {
+    
 }
 
 @end

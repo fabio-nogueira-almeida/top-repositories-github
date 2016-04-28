@@ -11,6 +11,6 @@
 @interface GHPullRequestController : UITableViewController
 
 - (void)createWithRepository:(NSString *)repository
-                        user:(NSString *)user;
+                   ownerName:(NSString *)ownerName;
 
 @end

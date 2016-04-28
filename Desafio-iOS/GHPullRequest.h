@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class GHUser;
+#import "GHUser.h"
 
 @interface GHPullRequest : NSObject
 

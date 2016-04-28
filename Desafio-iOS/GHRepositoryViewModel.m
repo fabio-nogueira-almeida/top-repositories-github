@@ -17,7 +17,7 @@
 @property (strong, nonatomic) NSString *forks;
 @property (strong, nonatomic) NSString *stars;
 @property (strong, nonatomic) NSString *username;
-@property (strong, nonatomic) NSURL *userImageURL;
+@property (strong, nonatomic) NSURL *ownerImageURL;
 
 @end
 
@@ -29,7 +29,7 @@
         self.repositoryName = model.name;
         self.repositoryDescription = model.repositoryDescription;
         self.username = model.owner.login;
-        self.userImageURL = [NSURL URLWithString:model.owner.avatarURL];
+        self.ownerImageURL = [NSURL URLWithString:model.owner.avatarURL];
         
         NSString *forks = @"0";
         if (model.forks) {

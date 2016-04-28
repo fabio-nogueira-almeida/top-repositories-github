@@ -7,7 +7,6 @@
 //
 
 #import "GHPullRequest.h"
-#import "GHUser.h"
 
 @implementation GHPullRequest
 

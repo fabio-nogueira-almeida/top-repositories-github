@@ -16,11 +16,11 @@
 #pragma mark - Private
 
 - (void)imageViewCornerRadius {
-    self.imageView.clipsToBounds = YES;
-    self.imageView.layer.cornerRadius = CGRectGetWidth(self.imageView.frame) / 2;
+    self.userImageView.layer.masksToBounds = YES;
+    self.userImageView.layer.cornerRadius = CGRectGetWidth(self.userImageView.frame) / 2;
 }
 
-#pragma mark - Initialize
+#pragma mark - Public
 
 - (void)initWithModel:(id)model {
     [super initWithModel:model];
@@ -34,7 +34,7 @@
     self.userLabel.text = viewModel.username;
     
     [self.userImageView setPin_updateWithProgress:YES];
-    [self.userImageView pin_setImageFromURL:viewModel.userImageURL];
+    [self.userImageView pin_setImageFromURL:viewModel.ownerImageURL];
     
     [self imageViewCornerRadius];
 }

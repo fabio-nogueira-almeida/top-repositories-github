@@ -17,7 +17,7 @@
 @property (readonly) NSString *forks;
 @property (readonly) NSString *stars;
 @property (readonly) NSString *username;
-@property (readonly) NSURL *userImageURL;
+@property (readonly) NSURL *ownerImageURL;
 
 - (instancetype)initWithModel:(GHRepository *)model;
 

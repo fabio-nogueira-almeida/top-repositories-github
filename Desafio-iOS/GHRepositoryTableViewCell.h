@@ -22,6 +22,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *forkLabel;
 @property (weak, nonatomic) IBOutlet UILabel *starLabel;
 
-- (void)initWithModel:(id)model;
-
 @end

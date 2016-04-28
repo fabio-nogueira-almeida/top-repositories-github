@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GHTableViewCell.h"
+#import "GHPullRequest.h"
 
-@interface GHPullRequestTableViewCell : UITableViewCell
+@interface GHPullRequestTableViewCell : GHTableViewCell
+
+@property (strong, nonatomic) GHPullRequest *model;
+
 @property (weak, nonatomic) IBOutlet UILabel *repositoryLabel;
-
 @property (weak, nonatomic) IBOutlet UILabel *bodyTitle;
 @property (weak, nonatomic) IBOutlet UILabel *userLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;

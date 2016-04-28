@@ -66,13 +66,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Github JavaPop";
+    self.title = @"Github Java";
     self.currentPage = 1;
     [self setupTableView];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     [self fetchRepositoryWithPage:self.currentPage];
 }
 
@@ -91,7 +91,7 @@
     
     GHPullRequestController *pullRequestController = [[GHPullRequestController alloc] init];
     [pullRequestController createWithRepository:cell.model.name
-                                           user:cell.model.owner.login];
+                                      ownerName:cell.model.owner.login];
     [self.navigationController pushViewController:pullRequestController animated:YES];
 }
 

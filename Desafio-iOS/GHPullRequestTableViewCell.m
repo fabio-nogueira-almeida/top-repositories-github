@@ -7,18 +7,36 @@
 //
 
 #import "GHPullRequestTableViewCell.h"
+#import "GHPullRequestViewModel.h"
+#import <PINRemoteImage/PINImageView+PINRemoteImage.h>
 
 @implementation GHPullRequestTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+#pragma mark - Private
+
+- (void)imageViewCornerRadius {
+    self.userImageView.layer.masksToBounds = YES;
+    self.userImageView.layer.cornerRadius = CGRectGetWidth(self.userImageView.frame) / 2;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+#pragma mark - Public 
 
-    // Configure the view for the selected state
+- (void)initWithModel:(id)model {
+    [super initWithModel:model];
+    self.model = model;
+    
+    GHPullRequestViewModel *viewModel = [[GHPullRequestViewModel alloc] initWithModel:model];
+    self.repositoryLabel.text = viewModel.title;
+    self.userLabel.text = viewModel.username;
+    
+    if (![viewModel.body isKindOfClass:[NSNull class]]) {
+        self.bodyTitle.text = viewModel.body;
+    }
+
+    [self.userImageView setPin_updateWithProgress:YES];
+    [self.userImageView pin_setImageFromURL:viewModel.userImageURL];
+
+    [self imageViewCornerRadius];
 }
 
 @end
