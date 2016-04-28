@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "GHOwner.h"
+
+static NSString * const GHRepositoryCodigo = @"id";
+static NSString * const GHRepositoryName = @"name";
+static NSString * const GHRepositoryRepositoryDescription = @"description";
+static NSString * const GHRepositoryForks = @"forks";
+static NSString * const GHRepositoryStars = @"stargazers_count";
+static NSString * const GHRepositoryOwner = @"owner";
 
 @interface GHRepository : NSObject
 

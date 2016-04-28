@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * const GHOwnerLogin = @"login";
+static NSString * const GHOwnerAvatarURL = @"avatar_url";
+
 @interface GHOwner : NSObject
 
 @property (copy, nonatomic) NSString *login;

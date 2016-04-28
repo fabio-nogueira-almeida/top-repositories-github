@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701FC2FF1CD1A455007B87C8 /* GHPullRequestViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FC2FE1CD1A455007B87C8 /* GHPullRequestViewModelTest.m */; };
+		701FC3041CD1A7E5007B87C8 /* GHUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FC3031CD1A7E5007B87C8 /* GHUserTest.m */; };
+		701FC3071CD1B0A8007B87C8 /* GHPullRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FC3061CD1B0A8007B87C8 /* GHPullRequestTest.m */; };
+		701FC3091CD1B3BD007B87C8 /* GHOwnerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FC3081CD1B3BD007B87C8 /* GHOwnerTest.m */; };
+		701FC30B1CD1B528007B87C8 /* GHRepositoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FC30A1CD1B528007B87C8 /* GHRepositoryTest.m */; };
+		701FC30E1CD1B64F007B87C8 /* GHRepositoryResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 701FC30D1CD1B64F007B87C8 /* GHRepositoryResponseTest.m */; };
 		703A86251CCEEBA500E6AFA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86241CCEEBA500E6AFA3 /* main.m */; };
 		703A86281CCEEBA500E6AFA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 703A86271CCEEBA500E6AFA3 /* AppDelegate.m */; };
 		703A862E1CCEEBA500E6AFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703A862C1CCEEBA500E6AFA3 /* Main.storyboard */; };
@@ -89,6 +95,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		701FC2FE1CD1A455007B87C8 /* GHPullRequestViewModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPullRequestViewModelTest.m; sourceTree = "<group>"; };
+		701FC3031CD1A7E5007B87C8 /* GHUserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUserTest.m; sourceTree = "<group>"; };
+		701FC3061CD1B0A8007B87C8 /* GHPullRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPullRequestTest.m; sourceTree = "<group>"; };
+		701FC3081CD1B3BD007B87C8 /* GHOwnerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHOwnerTest.m; sourceTree = "<group>"; };
+		701FC30A1CD1B528007B87C8 /* GHRepositoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTest.m; sourceTree = "<group>"; };
+		701FC30D1CD1B64F007B87C8 /* GHRepositoryResponseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryResponseTest.m; sourceTree = "<group>"; };
 		703A86201CCEEBA500E6AFA3 /* Desafio-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		703A86241CCEEBA500E6AFA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		703A86261CCEEBA500E6AFA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -186,6 +198,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		701FC3001CD1A7C1007B87C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				701FC30C1CD1B63F007B87C8 /* Response */,
+				701FC3031CD1A7E5007B87C8 /* GHUserTest.m */,
+				701FC3061CD1B0A8007B87C8 /* GHPullRequestTest.m */,
+				701FC3081CD1B3BD007B87C8 /* GHOwnerTest.m */,
+				701FC30A1CD1B528007B87C8 /* GHRepositoryTest.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		701FC30C1CD1B63F007B87C8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				701FC30D1CD1B64F007B87C8 /* GHRepositoryResponseTest.m */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
 		703A86171CCEEBA500E6AFA3 = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +261,7 @@
 		703A863C1CCEEBA500E6AFA3 /* Desafio-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				701FC3001CD1A7C1007B87C8 /* Model */,
 				707DCF001CD15EC70099F41E /* ViewModel */,
 				703A86801CCF7FB500E6AFA3 /* Controller */,
 				703A866C1CCEF76500E6AFA3 /* DataSource */,
@@ -261,11 +294,11 @@
 		703A865B1CCEF06600E6AFA3 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				703A865C1CCEF06D00E6AFA3 /* Controller */,
 				703A86681CCEF6DF00E6AFA3 /* DataSource */,
+				703A865E1CCEF07600E6AFA3 /* Model */,
 				703A86601CCEF08200E6AFA3 /* Others */,
 				703A865F1CCEF07C00E6AFA3 /* ViewModel */,
-				703A865E1CCEF07600E6AFA3 /* Model */,
-				703A865C1CCEF06D00E6AFA3 /* Controller */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -386,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				707DCF121CD165900099F41E /* GHRepositoryViewModelTest.m */,
+				701FC2FE1CD1A455007B87C8 /* GHPullRequestViewModelTest.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -576,6 +610,12 @@
 			files = (
 				703A86821CCF7FCD00E6AFA3 /* GHRepositoryControllerTest.m in Sources */,
 				70E418531CD0559900638600 /* GHRepositoryTableViewDataSorceTests.m in Sources */,
+				701FC3091CD1B3BD007B87C8 /* GHOwnerTest.m in Sources */,
+				701FC2FF1CD1A455007B87C8 /* GHPullRequestViewModelTest.m in Sources */,
+				701FC3071CD1B0A8007B87C8 /* GHPullRequestTest.m in Sources */,
+				701FC30E1CD1B64F007B87C8 /* GHRepositoryResponseTest.m in Sources */,
+				701FC30B1CD1B528007B87C8 /* GHRepositoryTest.m in Sources */,
+				701FC3041CD1A7E5007B87C8 /* GHUserTest.m in Sources */,
 				703A866E1CCEF77300E6AFA3 /* GHDataSourceTest.m in Sources */,
 				707DCF131CD165900099F41E /* GHRepositoryViewModelTest.m in Sources */,
 			);

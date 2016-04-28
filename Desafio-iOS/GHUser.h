@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * const GHUserUserName = @"login2";
+static NSString * const GHUserAvatarURL = @"avatar_url";
+
 @interface GHUser : NSObject
 
 @property (copy, nonatomic) NSString *userName;

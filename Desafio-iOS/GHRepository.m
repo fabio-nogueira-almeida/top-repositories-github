@@ -13,12 +13,12 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        self.codigo = [dictionary objectForKey:@"id"];
-        self.name = [dictionary objectForKey:@"name"];
-        self.repositoryDescription = [dictionary objectForKey:@"description"];
-        self.forks = [dictionary objectForKey:@"forks"];
-        self.stars = [dictionary objectForKey:@"stargazers_count"];
-        self.owner = [[GHOwner alloc] initWithDictionary:[dictionary objectForKey:@"owner"]];
+        self.codigo = [dictionary objectForKey:GHRepositoryCodigo];
+        self.name = [dictionary objectForKey:GHRepositoryName];
+        self.repositoryDescription = [dictionary objectForKey:GHRepositoryRepositoryDescription];
+        self.forks = [dictionary objectForKey:GHRepositoryForks];
+        self.stars = [dictionary objectForKey:GHRepositoryStars];
+        self.owner = [[GHOwner alloc] initWithDictionary:[dictionary objectForKey:GHRepositoryOwner]];
     }
     
     return self;

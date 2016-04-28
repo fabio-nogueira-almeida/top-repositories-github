@@ -14,10 +14,10 @@
 #pragma mark - Private
 
 - (void)repositoriesFromDictionary:(NSDictionary *)dictionary {
-    if ([dictionary objectForKey:@"items"]) {
+    if ([dictionary objectForKey:GHRepositoryResponseItems]) {
         NSMutableArray *repositories = [NSMutableArray array];
         
-        NSArray *items = [dictionary objectForKey:@"items"];
+        NSArray *items = [dictionary objectForKey:GHRepositoryResponseItems];
         for (NSDictionary *item in items) {
             GHRepository *repository = [[GHRepository alloc] initWithDictionary:item];
             [repositories addObject:repository];
@@ -32,8 +32,8 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        self.totalCount = [dictionary objectForKey:@"total_count"];
-        self.incompleteStatus = (BOOL)[dictionary objectForKey:@"incomplete_status"];
+        self.totalCount = [dictionary objectForKey:GHRepositoryResponseTotal];
+        self.incompleteStatus = (BOOL)[dictionary objectForKey:GHRepositoryResponseStatus];
         [self repositoriesFromDictionary:dictionary];
     }
     return self;

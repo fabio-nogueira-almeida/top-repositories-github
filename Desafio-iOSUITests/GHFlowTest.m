@@ -29,6 +29,7 @@
     XCUIElementQuery *tablesQuery = app.tables;
     [tablesQuery.staticTexts[@"react-native"] tap];
     [tablesQuery.staticTexts[@"Make it easier to develop ReactNative from repo HEAD"] tap];
+    sleep(2);
     [app.buttons[@"Done"] tap];
     [app.navigationBars[@"react-native"].buttons[@"Github Java"] tap];
 }

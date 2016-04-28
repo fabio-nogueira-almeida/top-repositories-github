@@ -43,7 +43,8 @@
 }
 
 - (void)testRepositoryFetch {
-    XCTestExpectation *expectation = [self expectationWithDescription:@"fetching repositories"];
+    XCTestExpectation *expectation =
+    [self expectationWithDescription:@"fetching repositories"];
     
     [self.manager GET:@"https://api.github.com/search/repositories?q=language:Java&sort=stars&page=1"
            parameters:nil
@@ -60,7 +61,8 @@
 }
 
 - (void)testPullRequestFetch {
-    XCTestExpectation *expectation = [self expectationWithDescription:@"fetching repositories"];
+    XCTestExpectation *expectation =
+    [self expectationWithDescription:@"fetching pull requests"];
     
     [self.manager GET:@"https://api.github.com/repos/facebook/react-native/pulls"
            parameters:nil
@@ -70,7 +72,7 @@
         XCTAssertEqual(httpResponse.statusCode, 200);
         [expectation fulfill];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        XCTFail(@"failure testPullRequyestFetch");
+        XCTFail(@"failure testPullRequestFetch");
     }];
     
     [self waitForExpectationsWithTimeout:5 handler:nil];

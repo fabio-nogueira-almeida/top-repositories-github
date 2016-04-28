@@ -13,10 +13,10 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        self.title = [dictionary objectForKey:@"title"];
-        self.body = [dictionary objectForKey:@"body"];
-        self.htmlURL = [dictionary objectForKey:@"html_url"];
-        self.user = [[GHUser alloc] initWithDictionary:[dictionary objectForKey:@"user"]];
+        self.title = [dictionary objectForKey:GHPullRequestTitle];
+        self.body = [dictionary objectForKey:GHPullRequestBody];
+        self.htmlURL = [dictionary objectForKey:GHPullRequestHtmlURL];
+        self.user = [[GHUser alloc] initWithDictionary:[dictionary objectForKey:GHPullRequestUser]];
     }
     
     return self;

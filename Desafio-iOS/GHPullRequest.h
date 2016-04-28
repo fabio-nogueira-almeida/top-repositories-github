@@ -10,6 +10,11 @@
 
 #import "GHUser.h"
 
+static NSString * const GHPullRequestTitle = @"title";
+static NSString * const GHPullRequestBody = @"body";
+static NSString * const GHPullRequestHtmlURL = @"html_url";
+static NSString * const GHPullRequestUser = @"user";
+
 @interface GHPullRequest : NSObject
 
 @property (copy, nonatomic) NSString *title;

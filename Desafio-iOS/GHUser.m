@@ -13,8 +13,8 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     if (self) {
-        self.userName = (NSString *)[dictionary objectForKey:@"login"];
-        self.avatarURL = [dictionary objectForKey:@"avatar_url"];
+        self.userName = (NSString *)[dictionary objectForKey:GHUserUserName];
+        self.avatarURL = [dictionary objectForKey:GHUserAvatarURL];
     }
     
     return self;
