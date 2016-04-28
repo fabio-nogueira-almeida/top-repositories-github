@@ -15,6 +15,7 @@
 @property (copy, nonatomic) NSString *title;
 @property (copy, nonatomic) NSString *body;
 @property (strong, nonatomic) GHUser *user;
+@property (copy, nonatomic) NSString *htmlURL;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 

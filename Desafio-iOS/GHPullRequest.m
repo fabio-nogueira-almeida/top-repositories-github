@@ -15,6 +15,7 @@
     if (self) {
         self.title = [dictionary objectForKey:@"title"];
         self.body = [dictionary objectForKey:@"body"];
+        self.htmlURL = [dictionary objectForKey:@"html_url"];
         self.user = [[GHUser alloc] initWithDictionary:[dictionary objectForKey:@"user"]];
     }
     

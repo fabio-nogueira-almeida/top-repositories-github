@@ -9,6 +9,9 @@
 #import "GHPullRequestController.h"
 #import "GHDataSource.h"
 #import "GHPullRequestTableViewDataSource.h"
+#import "GHPullRequestTableViewCell.h"
+
+#import <SafariServices/SafariServices.h>
 
 @interface GHPullRequestController () <UITableViewDelegate>
 
@@ -58,6 +61,12 @@
     self.tableView.delegate = self;
 }
 
+- (void)presentSafariControllerWithURL:(NSString *)urlString {
+    NSURL *url = [NSURL URLWithString:urlString];
+    SFSafariViewController *safariController = [[SFSafariViewController alloc] initWithURL:url];
+    [self presentViewController:safariController animated:YES completion:nil];
+}
+
 #pragma mark - Initialize
 
 - (void)createWithRepository:(NSString *)repository
@@ -77,6 +86,14 @@
     [super viewDidAppear:animated];
     self.title = self.repository;
     [self fetchPullRequests];
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    GHPullRequestTableViewCell *cell =
+    (GHPullRequestTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+    [self presentSafariControllerWithURL:cell.model.htmlURL];
 }
 
 @end

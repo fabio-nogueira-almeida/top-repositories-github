@@ -44,6 +44,7 @@
 		7088CB551CD18A7400EE128A /* GHPullRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7088CB531CD18A7400EE128A /* GHPullRequestTableViewCell.xib */; };
 		7088CB581CD18D6200EE128A /* GHPullRequestTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB571CD18D6200EE128A /* GHPullRequestTableViewDataSource.m */; };
 		7088CB5F1CD1935D00EE128A /* GHPullRequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB5E1CD1935D00EE128A /* GHPullRequestViewModel.m */; };
+		7088CB641CD19D0E00EE128A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7088CB631CD19D0E00EE128A /* SafariServices.framework */; };
 		70E418431CD047A500638600 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418421CD047A500638600 /* UITableView+Extension.m */; };
 		70E4184A1CD04E6400638600 /* GHLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418481CD04E6400638600 /* GHLoadingTableViewCell.m */; };
 		70E4184B1CD04E6400638600 /* GHLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E418491CD04E6400638600 /* GHLoadingTableViewCell.xib */; };
@@ -135,6 +136,7 @@
 		7088CB571CD18D6200EE128A /* GHPullRequestTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPullRequestTableViewDataSource.m; sourceTree = "<group>"; };
 		7088CB5D1CD1935D00EE128A /* GHPullRequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHPullRequestViewModel.h; sourceTree = "<group>"; };
 		7088CB5E1CD1935D00EE128A /* GHPullRequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPullRequestViewModel.m; sourceTree = "<group>"; };
+		7088CB631CD19D0E00EE128A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		70E418411CD047A500638600 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		70E418421CD047A500638600 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		70E418471CD04E6400638600 /* GHLoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHLoadingTableViewCell.h; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7088CB641CD19D0E00EE128A /* SafariServices.framework in Frameworks */,
 				7075030C1CD171620020E9EB /* OCMock.framework in Frameworks */,
 				707503181CD1731C0020E9EB /* PINCache.framework in Frameworks */,
 				707503141CD173070020E9EB /* AFNetworking.framework in Frameworks */,
@@ -243,6 +246,7 @@
 		703A865A1CCEF05500E6AFA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7088CB631CD19D0E00EE128A /* SafariServices.framework */,
 				707503081CD171620020E9EB /* OCMock.framework */,
 				707503091CD171620020E9EB /* AFNetworking.framework */,
 				7075030A1CD171620020E9EB /* PINRemoteImage.framework */,
@@ -386,10 +390,10 @@
 		7088CB451CD1843B00EE128A /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				70E4184C1CD04F7300638600 /* GHRepositoryTableViewDataSource.h */,
-				70E4184D1CD04F7300638600 /* GHRepositoryTableViewDataSource.m */,
 				703A86771CCEFE3700E6AFA3 /* GHRepositoryController.h */,
 				703A86781CCEFE3700E6AFA3 /* GHRepositoryController.m */,
+				70E4184C1CD04F7300638600 /* GHRepositoryTableViewDataSource.h */,
+				70E4184D1CD04F7300638600 /* GHRepositoryTableViewDataSource.m */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
