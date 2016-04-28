@@ -28,11 +28,7 @@
     GHPullRequestViewModel *viewModel = [[GHPullRequestViewModel alloc] initWithModel:model];
     self.repositoryLabel.text = viewModel.title;
     self.userLabel.text = viewModel.username;
-    
-    if (![viewModel.body isKindOfClass:[NSNull class]]) {
-        self.bodyTitle.text = viewModel.body;
-    }
-
+    self.bodyTitle.text = viewModel.body;
     [self.userImageView setPin_updateWithProgress:YES];
     [self.userImageView pin_setImageFromURL:viewModel.userImageURL];
 

@@ -37,7 +37,9 @@
                        success:(GHPagedRequestSuccess)successBlock {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
-    [self.manager GET:@"https://api.github.com/search/repositories?q=language:Java&sort=stars&page=1"
+    NSString *url = [NSString stringWithFormat:@"https://api.github.com/search/repositories?q=language:Java&sort=stars&page=%ld", (long)page];
+    
+    [self.manager GET:url
            parameters:nil
              progress:nil
     success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

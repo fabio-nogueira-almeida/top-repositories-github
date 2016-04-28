@@ -25,9 +25,11 @@
     self = [super init];
     if (self) {
         self.title = model.title;
-        self.body = model.body;
         self.username = model.user.userName;
         self.userImageURL = [NSURL URLWithString:model.user.avatarURL];
+        if (![model.body isKindOfClass:[NSNull class]]) {
+            self.body = model.body;
+        }
     }
     
     return self;

@@ -27,9 +27,12 @@
     self = [super init];
     if (self) {
         self.repositoryName = model.name;
-        self.repositoryDescription = model.repositoryDescription;
         self.username = model.owner.login;
         self.ownerImageURL = [NSURL URLWithString:model.owner.avatarURL];
+        
+        if (![model.repositoryDescription isKindOfClass:[NSNull class]]) {
+            self.repositoryDescription = model.repositoryDescription;
+        }
         
         NSString *forks = @"0";
         if (model.forks) {
