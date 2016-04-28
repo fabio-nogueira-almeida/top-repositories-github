@@ -45,6 +45,7 @@
 		7088CB581CD18D6200EE128A /* GHPullRequestTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB571CD18D6200EE128A /* GHPullRequestTableViewDataSource.m */; };
 		7088CB5F1CD1935D00EE128A /* GHPullRequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB5E1CD1935D00EE128A /* GHPullRequestViewModel.m */; };
 		7088CB641CD19D0E00EE128A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7088CB631CD19D0E00EE128A /* SafariServices.framework */; };
+		7088CB681CD1A17000EE128A /* GHFlowTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7088CB671CD1A17000EE128A /* GHFlowTest.m */; };
 		70E418431CD047A500638600 /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418421CD047A500638600 /* UITableView+Extension.m */; };
 		70E4184A1CD04E6400638600 /* GHLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E418481CD04E6400638600 /* GHLoadingTableViewCell.m */; };
 		70E4184B1CD04E6400638600 /* GHLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E418491CD04E6400638600 /* GHLoadingTableViewCell.xib */; };
@@ -137,6 +138,7 @@
 		7088CB5D1CD1935D00EE128A /* GHPullRequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHPullRequestViewModel.h; sourceTree = "<group>"; };
 		7088CB5E1CD1935D00EE128A /* GHPullRequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHPullRequestViewModel.m; sourceTree = "<group>"; };
 		7088CB631CD19D0E00EE128A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		7088CB671CD1A17000EE128A /* GHFlowTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHFlowTest.m; sourceTree = "<group>"; };
 		70E418411CD047A500638600 /* UITableView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extension.h"; sourceTree = "<group>"; };
 		70E418421CD047A500638600 /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		70E418471CD04E6400638600 /* GHLoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHLoadingTableViewCell.h; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				703A864A1CCEEBA500E6AFA3 /* Info.plist */,
+				7088CB671CD1A17000EE128A /* GHFlowTest.m */,
 			);
 			path = "Desafio-iOSUITests";
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7088CB681CD1A17000EE128A /* GHFlowTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

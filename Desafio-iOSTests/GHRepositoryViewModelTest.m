@@ -44,14 +44,14 @@
 
 - (void)testShouldVerifyIfPropertiesIsNotNil {
     XCTAssertNotNil(self.viewModel.username);
-    XCTAssertNotNil(self.viewModel.userImageURL);
+    XCTAssertNotNil(self.viewModel.ownerImageURL);
     XCTAssertNotNil(self.viewModel.repositoryDescription);
     XCTAssertNotNil(self.viewModel.stars);
     XCTAssertNotNil(self.viewModel.forks);
 }
 
 - (void)testShouldVerifyUserImageIsURLType {
-    XCTAssertEqual([self.viewModel.userImageURL class], [NSURL class],);
+    XCTAssertEqual([self.viewModel.ownerImageURL class], [NSURL class],);
 }
 
 - (void)testShouldNotReturnNilIfDonstHasStars {
