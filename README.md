@@ -1,4 +1,4 @@
-# Search most popular repositories by language
+# Search the most popular repositories
 
 This app was created for search popular repositories on GitHub and practice more about how to do tests
 
