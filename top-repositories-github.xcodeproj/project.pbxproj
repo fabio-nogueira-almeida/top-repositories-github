@@ -101,7 +101,7 @@
 		701FC3081CD1B3BD007B87C8 /* GHOwnerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHOwnerTest.m; sourceTree = "<group>"; };
 		701FC30A1CD1B528007B87C8 /* GHRepositoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryTest.m; sourceTree = "<group>"; };
 		701FC30D1CD1B64F007B87C8 /* GHRepositoryResponseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepositoryResponseTest.m; sourceTree = "<group>"; };
-		703A86201CCEEBA500E6AFA3 /* Desafio-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		703A86201CCEEBA500E6AFA3 /* top-repositories-github.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "top-repositories-github.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		703A86241CCEEBA500E6AFA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		703A86261CCEEBA500E6AFA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		703A86271CCEEBA500E6AFA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,9 +109,9 @@
 		703A862F1CCEEBA500E6AFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		703A86321CCEEBA500E6AFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		703A86341CCEEBA500E6AFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		703A86391CCEEBA500E6AFA3 /* Desafio-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		703A86391CCEEBA500E6AFA3 /* top-repositories-github.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "top-repositories-github.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		703A863F1CCEEBA500E6AFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		703A86441CCEEBA500E6AFA3 /* Desafio-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		703A86441CCEEBA500E6AFA3 /* top-repositories-github.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "top-repositories-github.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		703A864A1CCEEBA500E6AFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703A86621CCEF38A00E6AFA3 /* GHRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepository.h; sourceTree = "<group>"; };
 		703A86631CCEF38A00E6AFA3 /* GHRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepository.m; sourceTree = "<group>"; };
@@ -223,9 +223,9 @@
 			children = (
 				707DCEFE1CD15E220099F41E /* Cartfile */,
 				703A865A1CCEF05500E6AFA3 /* Frameworks */,
-				703A86221CCEEBA500E6AFA3 /* Desafio-iOS */,
-				703A863C1CCEEBA500E6AFA3 /* Desafio-iOSTests */,
-				703A86471CCEEBA500E6AFA3 /* Desafio-iOSUITests */,
+				703A86221CCEEBA500E6AFA3 /* top-repositories */,
+				703A863C1CCEEBA500E6AFA3 /* top-repositoriesTests */,
+				703A86471CCEEBA500E6AFA3 /* top-repositoriesUITests */,
 				703A86211CCEEBA500E6AFA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -233,20 +233,21 @@
 		703A86211CCEEBA500E6AFA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				703A86201CCEEBA500E6AFA3 /* Desafio-iOS.app */,
-				703A86391CCEEBA500E6AFA3 /* Desafio-iOSTests.xctest */,
-				703A86441CCEEBA500E6AFA3 /* Desafio-iOSUITests.xctest */,
+				703A86201CCEEBA500E6AFA3 /* top-repositories-github.app */,
+				703A86391CCEEBA500E6AFA3 /* top-repositories-github.xctest */,
+				703A86441CCEEBA500E6AFA3 /* top-repositories-github.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		703A86221CCEEBA500E6AFA3 /* Desafio-iOS */ = {
+		703A86221CCEEBA500E6AFA3 /* top-repositories */ = {
 			isa = PBXGroup;
 			children = (
 				703A865B1CCEF06600E6AFA3 /* Code */,
 				703A86231CCEEBA500E6AFA3 /* Supporting Files */,
 				703A86611CCEF08D00E6AFA3 /* View */,
 			);
+			name = "top-repositories";
 			path = "Desafio-iOS";
 			sourceTree = "<group>";
 		};
@@ -258,7 +259,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		703A863C1CCEEBA500E6AFA3 /* Desafio-iOSTests */ = {
+		703A863C1CCEEBA500E6AFA3 /* top-repositoriesTests */ = {
 			isa = PBXGroup;
 			children = (
 				701FC3001CD1A7C1007B87C8 /* Model */,
@@ -267,15 +268,17 @@
 				703A866C1CCEF76500E6AFA3 /* DataSource */,
 				703A863F1CCEEBA500E6AFA3 /* Info.plist */,
 			);
+			name = "top-repositoriesTests";
 			path = "Desafio-iOSTests";
 			sourceTree = "<group>";
 		};
-		703A86471CCEEBA500E6AFA3 /* Desafio-iOSUITests */ = {
+		703A86471CCEEBA500E6AFA3 /* top-repositoriesUITests */ = {
 			isa = PBXGroup;
 			children = (
 				703A864A1CCEEBA500E6AFA3 /* Info.plist */,
 				7088CB671CD1A17000EE128A /* GHFlowTest.m */,
 			);
+			name = "top-repositoriesUITests";
 			path = "Desafio-iOSUITests";
 			sourceTree = "<group>";
 		};
@@ -449,9 +452,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		703A861F1CCEEBA500E6AFA3 /* Desafio-iOS */ = {
+		703A861F1CCEEBA500E6AFA3 /* top-repositories-github */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 703A864D1CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "Desafio-iOS" */;
+			buildConfigurationList = 703A864D1CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "top-repositories-github" */;
 			buildPhases = (
 				703A861C1CCEEBA500E6AFA3 /* Sources */,
 				703A861D1CCEEBA500E6AFA3 /* Frameworks */,
@@ -462,14 +465,14 @@
 			);
 			dependencies = (
 			);
-			name = "Desafio-iOS";
+			name = "top-repositories-github";
 			productName = "Desafio-iOS";
-			productReference = 703A86201CCEEBA500E6AFA3 /* Desafio-iOS.app */;
+			productReference = 703A86201CCEEBA500E6AFA3 /* top-repositories-github.app */;
 			productType = "com.apple.product-type.application";
 		};
-		703A86381CCEEBA500E6AFA3 /* Desafio-iOSTests */ = {
+		703A86381CCEEBA500E6AFA3 /* top-repositories-githubTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 703A86501CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "Desafio-iOSTests" */;
+			buildConfigurationList = 703A86501CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "top-repositories-githubTests" */;
 			buildPhases = (
 				703A86351CCEEBA500E6AFA3 /* Sources */,
 				703A86361CCEEBA500E6AFA3 /* Frameworks */,
@@ -480,14 +483,14 @@
 			dependencies = (
 				703A863B1CCEEBA500E6AFA3 /* PBXTargetDependency */,
 			);
-			name = "Desafio-iOSTests";
+			name = "top-repositories-githubTests";
 			productName = "Desafio-iOSTests";
-			productReference = 703A86391CCEEBA500E6AFA3 /* Desafio-iOSTests.xctest */;
+			productReference = 703A86391CCEEBA500E6AFA3 /* top-repositories-github.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		703A86431CCEEBA500E6AFA3 /* Desafio-iOSUITests */ = {
+		703A86431CCEEBA500E6AFA3 /* top-repositories-githubUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 703A86531CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "Desafio-iOSUITests" */;
+			buildConfigurationList = 703A86531CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "top-repositories-githubUITests" */;
 			buildPhases = (
 				703A86401CCEEBA500E6AFA3 /* Sources */,
 				703A86411CCEEBA500E6AFA3 /* Frameworks */,
@@ -498,9 +501,9 @@
 			dependencies = (
 				703A86461CCEEBA500E6AFA3 /* PBXTargetDependency */,
 			);
-			name = "Desafio-iOSUITests";
+			name = "top-repositories-githubUITests";
 			productName = "Desafio-iOSUITests";
-			productReference = 703A86441CCEEBA500E6AFA3 /* Desafio-iOSUITests.xctest */;
+			productReference = 703A86441CCEEBA500E6AFA3 /* top-repositories-github.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -526,7 +529,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 703A861B1CCEEBA500E6AFA3 /* Build configuration list for PBXProject "Desafio-iOS" */;
+			buildConfigurationList = 703A861B1CCEEBA500E6AFA3 /* Build configuration list for PBXProject "top-repositories-github" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -539,9 +542,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				703A861F1CCEEBA500E6AFA3 /* Desafio-iOS */,
-				703A86381CCEEBA500E6AFA3 /* Desafio-iOSTests */,
-				703A86431CCEEBA500E6AFA3 /* Desafio-iOSUITests */,
+				703A861F1CCEEBA500E6AFA3 /* top-repositories-github */,
+				703A86381CCEEBA500E6AFA3 /* top-repositories-githubTests */,
+				703A86431CCEEBA500E6AFA3 /* top-repositories-githubUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -634,12 +637,12 @@
 /* Begin PBXTargetDependency section */
 		703A863B1CCEEBA500E6AFA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 703A861F1CCEEBA500E6AFA3 /* Desafio-iOS */;
+			target = 703A861F1CCEEBA500E6AFA3 /* top-repositories-github */;
 			targetProxy = 703A863A1CCEEBA500E6AFA3 /* PBXContainerItemProxy */;
 		};
 		703A86461CCEEBA500E6AFA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 703A861F1CCEEBA500E6AFA3 /* Desafio-iOS */;
+			target = 703A861F1CCEEBA500E6AFA3 /* top-repositories-github */;
 			targetProxy = 703A86451CCEEBA500E6AFA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -758,8 +761,8 @@
 				);
 				INFOPLIST_FILE = "Desafio-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Desafio-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.top-repositories-github";
+				PRODUCT_NAME = "top-repositories-github";
 			};
 			name = Debug;
 		};
@@ -773,8 +776,8 @@
 				);
 				INFOPLIST_FILE = "Desafio-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Desafio-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.top-repositories-github";
+				PRODUCT_NAME = "top-repositories-github";
 			};
 			name = Release;
 		};
@@ -789,8 +792,8 @@
 				INFOPLIST_FILE = "Desafio-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Desafio-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desafio-iOS.app/Desafio-iOS";
+				PRODUCT_NAME = "top-repositories-github";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/top-repositories-github.app/top-repositories-github";
 			};
 			name = Debug;
 		};
@@ -805,8 +808,8 @@
 				INFOPLIST_FILE = "Desafio-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Desafio-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desafio-iOS.app/Desafio-iOS";
+				PRODUCT_NAME = "top-repositories-github";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/top-repositories-github.app/top-repositories-github";
 			};
 			name = Release;
 		};
@@ -816,7 +819,7 @@
 				INFOPLIST_FILE = "Desafio-iOSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Desafio-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "top-repositories-github";
 				TEST_TARGET_NAME = "Desafio-iOS";
 			};
 			name = Debug;
@@ -827,7 +830,7 @@
 				INFOPLIST_FILE = "Desafio-iOSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.fabionogueira.Desafio-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "top-repositories-github";
 				TEST_TARGET_NAME = "Desafio-iOS";
 			};
 			name = Release;
@@ -835,7 +838,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		703A861B1CCEEBA500E6AFA3 /* Build configuration list for PBXProject "Desafio-iOS" */ = {
+		703A861B1CCEEBA500E6AFA3 /* Build configuration list for PBXProject "top-repositories-github" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				703A864B1CCEEBA500E6AFA3 /* Debug */,
@@ -844,7 +847,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		703A864D1CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "Desafio-iOS" */ = {
+		703A864D1CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "top-repositories-github" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				703A864E1CCEEBA500E6AFA3 /* Debug */,
@@ -853,7 +856,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		703A86501CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "Desafio-iOSTests" */ = {
+		703A86501CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "top-repositories-githubTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				703A86511CCEEBA500E6AFA3 /* Debug */,
@@ -862,7 +865,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		703A86531CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "Desafio-iOSUITests" */ = {
+		703A86531CCEEBA500E6AFA3 /* Build configuration list for PBXNativeTarget "top-repositories-githubUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				703A86541CCEEBA500E6AFA3 /* Debug */,
