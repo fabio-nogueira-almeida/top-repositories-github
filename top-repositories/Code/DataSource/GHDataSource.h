@@ -16,8 +16,9 @@ typedef void(^GHPullRequestRequestSuccess) (__strong NSArray *pullRequests);
 
 @interface GHDataSource : NSObject
 
-- (void)fetchRepositoryForPage:(NSInteger)page
-                       success:(GHPagedRequestSuccess)successBlock;
+- (void)fetchRepositoryForLanguage:(NSString *)language
+                              page:(NSInteger)page
+                           success:(GHPagedRequestSuccess)successBlock;
 
 - (void)fetchPullRequestForRepository:(NSString *)repository
                                 owner:(NSString *)owner

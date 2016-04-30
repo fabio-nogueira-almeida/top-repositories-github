@@ -13,4 +13,6 @@
 - (void)reloadTableViewDataSource:(NSArray *)repositories
                   totalRepository:(NSInteger)totalRepository;
 
+- (void)reloadTableViewDataSourceForEmptyRepository;
+
 @end

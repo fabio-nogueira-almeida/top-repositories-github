@@ -15,7 +15,7 @@
 
 #import "GHPullRequestController.h"
 
-@interface GHRepositoryController () <UITableViewDelegate>
+@interface GHRepositoryController () <UITableViewDelegate, UISearchBarDelegate>
 
 @property (strong, nonatomic) GHRepositoryTableViewDataSource *tableViewDataSource;
 @property (strong, nonatomic) GHDataSource *dataSource;
@@ -45,8 +45,10 @@
 
 #pragma mark - Private
 
-- (void)fetchRepositoryWithPage:(NSInteger)page {
-    [self.dataSource fetchRepositoryForPage:page
+- (void)fetchRepositoryForLanguage:(NSString *)language
+                              page:(NSInteger)page {
+    [self.dataSource fetchRepositoryForLanguage:language
+                                           page:page
     success:^(NSArray *repositories, NSInteger totalRepository) {
         [self.tableViewDataSource reloadTableViewDataSource:repositories
                                             totalRepository:totalRepository];
@@ -66,14 +68,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Github Java";
+    self.title = @"Github";
     self.currentPage = 1;
+    self.searchBar.delegate = self;
     [self setupTableView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self fetchRepositoryWithPage:self.currentPage];
+    [self fetchRepositoryForLanguage:self.searchBar.text
+                                page:self.currentPage];
 }
 
 #pragma mark - UITableViewDelegate
@@ -81,7 +85,8 @@
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([cell isKindOfClass:[GHLoadingTableViewCell class]]) {
         self.currentPage++;
-        [self fetchRepositoryWithPage:self.currentPage];
+        [self fetchRepositoryForLanguage:self.searchBar.text
+                                    page:self.currentPage];
     }
 }
 
@@ -93,6 +98,16 @@
     [pullRequestController createWithRepository:cell.model.name
                                       ownerName:cell.model.owner.login];
     [self.navigationController pushViewController:pullRequestController animated:YES];
+}
+
+#pragma mark - UISearchBarDelegate
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    self.title = [NSString stringWithFormat:@"%@ repositories", searchBar.text];
+    self.currentPage = 1;
+    [self.tableViewDataSource reloadTableViewDataSourceForEmptyRepository];
+    [self fetchRepositoryForLanguage:searchBar.text
+                                page:self.currentPage];
 }
 
 @end

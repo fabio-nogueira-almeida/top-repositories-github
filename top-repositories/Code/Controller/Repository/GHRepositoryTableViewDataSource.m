@@ -34,12 +34,17 @@
     return _repositories;
 }
 
-#pragma makr - Private
+#pragma makr - Public
 
 - (void)reloadTableViewDataSource:(NSArray *)repositories
                   totalRepository:(NSInteger)totalRepository {
     [self.repositories addObjectsFromArray:repositories];
     self.totalRepository = totalRepository;
+}
+
+- (void)reloadTableViewDataSourceForEmptyRepository {
+    self.repositories = [NSMutableArray array];
+    self.totalRepository = 0;
 }
 
 #pragma mark - UITableViewDataSource

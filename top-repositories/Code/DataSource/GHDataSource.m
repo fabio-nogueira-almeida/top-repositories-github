@@ -33,11 +33,13 @@
 
 #pragma mark - Public
 
-- (void)fetchRepositoryForPage:(NSInteger)page
-                       success:(GHPagedRequestSuccess)successBlock {
+- (void)fetchRepositoryForLanguage:(NSString *)language
+                              page:(NSInteger)page
+                           success:(GHPagedRequestSuccess)successBlock {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
-    NSString *url = [NSString stringWithFormat:@"https://api.github.com/search/repositories?q=language:Java&sort=stars&page=%ld", (long)page];
+    NSString *url =
+    [NSString stringWithFormat:@"https://api.github.com/search/repositories?q=language:%@&sort=stars&page=%ld", language, (long)page];
     
     [self.manager GET:url
            parameters:nil
